@@ -28,6 +28,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:rpi_con
+LIBS:obc-drone-hat-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 8268 11693 portrait
