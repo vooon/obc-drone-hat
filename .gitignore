@@ -1,0 +1,14 @@
+# KiCAD
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.net
+*.dsn
+
+# C files
+core
+
+# editor
+*.swp
+*~
