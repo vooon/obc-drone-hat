@@ -24,7 +24,7 @@ Modules
 -------
 
 1. UART chip - MAX3109 - provide two channels
-2. RTC chip - DS3132 - to keep system time
+2. RTC chip - DS3231 - to keep system time
 3. RC bridge MCU - STM32F030CC - to decode S.BUS, generate CPPM, inject FrSky telemetry to S.Port.
 4. Hi-power supply input (with optional Vbat mon up to 6S battery)
 5. ID EEPROM with all needed DT-overlays.
