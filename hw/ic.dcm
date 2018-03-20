@@ -18,4 +18,10 @@ K PNP/PNP Transistor
 F https://ru.mouser.com/ds/2/115/ds30437-85184.pdf
 $ENDCMP
 #
+$CMP MAX3109
+D Dual Serial UART with 128-Word FIFOs
+K UART SPI
+F https://datasheets.maximintegrated.com/en/ds/MAX3109.pdf
+$ENDCMP
+#
 #End Doc Library
