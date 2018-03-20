@@ -6,4 +6,16 @@ K 24Cxx EEPROM
 F https://www.onsemi.com/pub/Collateral/CAT24C32-D.PDF
 $ENDCMP
 #
+$CMP DMG2305UX
+D -20Vdss, P-MOSFET
+K pmos p-mos p-mosfet transistor
+F https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf
+$ENDCMP
+#
+$CMP DMMT5401
+D Dual PNP/PNP Transistor, 6-pin package
+K PNP/PNP Transistor
+F https://ru.mouser.com/ds/2/115/ds30437-85184.pdf
+$ENDCMP
+#
 #End Doc Library
