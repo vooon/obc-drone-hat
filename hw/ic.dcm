@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ASFL1-oscillator
+D crystal clock oscillator
+K quartz ceramic resonator oscillator
+F https://www.terraelectronica.ru/pdf/show?pdf_file=%252Fds%252Fpdf%252FA%252FASFL1-24.pdf
+$ENDCMP
+#
 $CMP CAT24
 D CAT24C32 EEPROM SOIC-8 TSSOP-8
 K 24Cxx EEPROM
