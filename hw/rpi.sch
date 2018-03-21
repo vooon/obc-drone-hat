@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:rpi_con
 LIBS:ic
+LIBS:dronecode_con
 LIBS:obc-drone-hat-cache
 EELAYER 25 0
 EELAYER END
@@ -92,20 +93,14 @@ $EndComp
 Wire Wire Line
 	3550 1950 3350 1950
 Wire Wire Line
-	3350 1700 3350 1950
-Wire Wire Line
-	3350 1950 3350 2750
+	3350 1700 3350 2750
 Wire Wire Line
 	3350 2750 3550 2750
 Connection ~ 3350 1950
 Wire Wire Line
 	3550 2350 3250 2350
 Wire Wire Line
-	3250 2350 3250 3150
-Wire Wire Line
-	3250 3150 3250 3850
-Wire Wire Line
-	3250 3850 3250 4200
+	3250 2350 3250 4200
 Wire Wire Line
 	3550 3150 3250 3150
 Connection ~ 3250 3150
@@ -126,24 +121,14 @@ $EndComp
 Wire Wire Line
 	5500 2050 5250 2050
 Wire Wire Line
-	5500 1700 5500 1950
-Wire Wire Line
-	5500 1950 5500 2050
+	5500 1700 5500 2050
 Wire Wire Line
 	5250 1950 5500 1950
 Connection ~ 5500 1950
 Wire Wire Line
 	5250 2150 5600 2150
 Wire Wire Line
-	5600 2150 5600 2550
-Wire Wire Line
-	5600 2550 5600 2850
-Wire Wire Line
-	5600 2850 5600 3350
-Wire Wire Line
-	5600 3350 5600 3550
-Wire Wire Line
-	5600 3550 5600 4200
+	5600 2150 5600 4200
 Wire Wire Line
 	5250 2550 5600 2550
 Connection ~ 5600 2550
@@ -238,17 +223,13 @@ F 3 "" H 5100 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 6550 5100 6550
-Wire Wire Line
-	5100 6550 5350 6550
+	4850 6550 5350 6550
 Wire Wire Line
 	5100 6550 5100 6800
 Wire Wire Line
 	5100 6450 4850 6450
 Wire Wire Line
-	5100 5400 5100 5500
-Wire Wire Line
-	5100 5500 5100 6450
+	5100 5400 5100 6450
 $Comp
 L R R?
 U 1 1 5AB0176B
@@ -261,9 +242,7 @@ F 3 "" H 4950 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 6050 4950 6050
-Wire Wire Line
-	4950 6050 5350 6050
+	4850 6050 5350 6050
 Wire Wire Line
 	4950 6050 4950 5950
 Wire Wire Line
@@ -272,13 +251,9 @@ Wire Wire Line
 	4950 5500 5100 5500
 Connection ~ 5100 5500
 Wire Wire Line
-	2850 6050 3200 6050
+	2850 6050 3750 6050
 Wire Wire Line
-	3200 6050 3750 6050
-Wire Wire Line
-	2850 6150 3300 6150
-Wire Wire Line
-	3300 6150 3750 6150
+	2850 6150 3750 6150
 $Comp
 L R R?
 U 1 1 5AB01D57
@@ -319,9 +294,7 @@ Wire Wire Line
 	3300 5950 3300 6150
 Connection ~ 3300 6150
 Wire Wire Line
-	3300 5400 3300 5550
-Wire Wire Line
-	3300 5550 3300 5650
+	3300 5400 3300 5650
 Wire Wire Line
 	3200 5650 3200 5550
 Wire Wire Line
@@ -362,11 +335,7 @@ $EndComp
 Wire Wire Line
 	3750 6350 3650 6350
 Wire Wire Line
-	3650 6350 3650 6450
-Wire Wire Line
-	3650 6450 3650 6550
-Wire Wire Line
-	3650 6550 3650 6800
+	3650 6350 3650 6800
 Wire Wire Line
 	3750 6450 3650 6450
 Connection ~ 3650 6450
@@ -405,23 +374,17 @@ F 3 "" H 4150 8350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3650 8250 3650 8250
-Wire Wire Line
 	3650 8250 3950 8250
 Wire Wire Line
 	4350 8250 4650 8250
 Wire Wire Line
-	4650 8250 4650 8250
-Wire Wire Line
-	4650 8500 4650 8250
+	4650 8000 4650 8500
 Connection ~ 4650 8250
 Wire Wire Line
-	3650 8500 3650 8250
+	3650 8000 3650 8500
 Connection ~ 3650 8250
 Wire Wire Line
-	3650 8900 3650 9000
-Wire Wire Line
-	3650 9000 3650 9150
+	3650 8900 3650 9150
 Connection ~ 3650 9000
 $Comp
 L GND #PWR09
@@ -457,18 +420,14 @@ F 3 "" H 3650 9300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 8900 4650 9000
-Wire Wire Line
-	4650 9000 4650 9150
+	4650 8900 4650 9150
 Wire Wire Line
 	4150 8550 4150 9000
 Wire Wire Line
 	4150 9000 4650 9000
 Connection ~ 4650 9000
 Wire Wire Line
-	3950 8700 4050 8700
-Wire Wire Line
-	4050 8700 4350 8700
+	3950 8700 4350 8700
 Wire Wire Line
 	4050 8700 4050 9000
 Wire Wire Line
@@ -522,8 +481,6 @@ F 3 "" H 4650 8000 50  0001 C CNN
 	1    4650 8000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 8250 4650 8000
 $Comp
 L +5V #PWR012
 U 1 1 5AB1599D
@@ -535,8 +492,6 @@ F 3 "" H 3650 8000 50  0001 C CNN
 	1    3650 8000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 8000 3650 8250
 Text Notes 3400 7700 0    60   ~ 0
 Zero voltage drop diode circuit\nRecommended for HAT power supply
 $EndSCHEMATC

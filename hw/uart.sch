@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:rpi_con
 LIBS:ic
+LIBS:dronecode_con
 LIBS:obc-drone-hat-cache
 EELAYER 25 0
 EELAYER END
@@ -79,10 +80,6 @@ F 3 "" H 3500 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3600 5150
-Text GLabel 2950 5050 0    60   Input ~ 0
-RPI_GPCLK0
-Wire Wire Line
-	2950 5050 3600 5050
 $Comp
 L C C?
 U 1 1 5AB1B470
@@ -112,7 +109,13 @@ Wire Wire Line
 Wire Wire Line
 	3600 5500 3250 5500
 Wire Wire Line
-	3250 5400 3250 6000
+	3250 5400 3250 5500
+Wire Wire Line
+	3250 5500 3250 5600
+Wire Wire Line
+	3250 5600 3250 5700
+Wire Wire Line
+	3250 5700 3250 6000
 Wire Wire Line
 	3250 5600 3600 5600
 Connection ~ 3250 5600
@@ -121,7 +124,9 @@ Wire Wire Line
 Connection ~ 3250 5700
 Connection ~ 3250 5500
 Wire Wire Line
-	3500 6300 3500 6500
+	3500 6300 3500 6400
+Wire Wire Line
+	3500 6400 3500 6500
 Wire Wire Line
 	3500 6400 3250 6400
 Wire Wire Line
@@ -150,7 +155,11 @@ F 3 "" H 3250 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2900 4750 3600 4750
+	2900 4750 3000 4750
+Wire Wire Line
+	3000 4750 3500 4750
+Wire Wire Line
+	3500 4750 3600 4750
 Wire Wire Line
 	3600 4650 3500 4650
 Wire Wire Line
@@ -180,7 +189,9 @@ Wire Wire Line
 Wire Wire Line
 	3600 4350 2950 4350
 Wire Wire Line
-	2950 4450 3600 4450
+	2950 4450 3500 4450
+Wire Wire Line
+	3500 4450 3600 4450
 Wire Wire Line
 	3400 4550 3500 4550
 Wire Wire Line
@@ -189,18 +200,22 @@ Connection ~ 3500 4450
 $Comp
 L GND #PWR016
 U 1 1 5AB1C686
-P 5300 6050
-F 0 "#PWR016" H 5300 5800 50  0001 C CNN
-F 1 "GND" H 5300 5900 50  0000 C CNN
-F 2 "" H 5300 6050 50  0001 C CNN
-F 3 "" H 5300 6050 50  0001 C CNN
-	1    5300 6050
+P 6200 4400
+F 0 "#PWR016" H 6200 4150 50  0001 C CNN
+F 1 "GND" H 6200 4250 50  0000 C CNN
+F 2 "" H 6200 4400 50  0001 C CNN
+F 3 "" H 6200 4400 50  0001 C CNN
+	1    6200 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5200 5700 5300 5700
 Wire Wire Line
-	5300 5700 5300 6050
+	5300 5700 5300 5800
+Wire Wire Line
+	5300 5800 5300 5900
+Wire Wire Line
+	5300 5900 5300 6050
 Wire Wire Line
 	5200 5800 5300 5800
 Connection ~ 5300 5800
@@ -235,4 +250,118 @@ Wire Wire Line
 	3500 3900 3500 3800
 Wire Wire Line
 	3500 3500 3500 3400
+$Comp
+L DC-Telemetry XP?
+U 1 1 5AB2FA79
+P 6700 4050
+F 0 "XP?" H 6600 4500 60  0000 C CNN
+F 1 "DC-Telemetry" V 6800 4050 60  0000 C CNN
+F 2 "" H 6700 4050 60  0001 C CNN
+F 3 "" H 6700 4050 60  0001 C CNN
+	1    6700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L DC-Telemetry XP?
+U 1 1 5AB2FFF0
+P 6700 4950
+F 0 "XP?" H 6600 5400 60  0000 C CNN
+F 1 "DC-Telemetry" V 6800 4950 60  0000 C CNN
+F 2 "" H 6700 4950 60  0001 C CNN
+F 3 "" H 6700 4950 60  0001 C CNN
+	1    6700 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3900 6300 3900
+Wire Wire Line
+	5200 4000 6300 4000
+Wire Wire Line
+	5200 4800 6300 4800
+Wire Wire Line
+	6300 4900 5200 4900
+Wire Wire Line
+	5200 4100 6300 4100
+Wire Wire Line
+	5200 4200 6300 4200
+Wire Wire Line
+	5200 5000 6300 5000
+Wire Wire Line
+	6300 5100 5200 5100
+$Comp
+L +5V #PWR?
+U 1 1 5AB3063A
+P 6000 3700
+F 0 "#PWR?" H 6000 3550 50  0001 C CNN
+F 1 "+5V" H 6000 3840 50  0000 C CNN
+F 2 "" H 6000 3700 50  0001 C CNN
+F 3 "" H 6000 3700 50  0001 C CNN
+	1    6000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4300 6200 4300
+Wire Wire Line
+	6200 4300 6200 4400
+$Comp
+L GND #PWR?
+U 1 1 5AB30BD8
+P 5300 6050
+F 0 "#PWR?" H 5300 5800 50  0001 C CNN
+F 1 "GND" H 5300 5900 50  0000 C CNN
+F 2 "" H 5300 6050 50  0001 C CNN
+F 3 "" H 5300 6050 50  0001 C CNN
+	1    5300 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AB30BF8
+P 6200 5300
+F 0 "#PWR?" H 6200 5050 50  0001 C CNN
+F 1 "GND" H 6200 5150 50  0000 C CNN
+F 2 "" H 6200 5300 50  0001 C CNN
+F 3 "" H 6200 5300 50  0001 C CNN
+	1    6200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5AB30E1E
+P 6000 4600
+F 0 "#PWR?" H 6000 4450 50  0001 C CNN
+F 1 "+5V" H 6000 4740 50  0000 C CNN
+F 2 "" H 6000 4600 50  0001 C CNN
+F 3 "" H 6000 4600 50  0001 C CNN
+	1    6000 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5200 6200 5200
+Wire Wire Line
+	6200 5200 6200 5300
+Wire Wire Line
+	6300 4700 6000 4700
+Wire Wire Line
+	6000 4700 6000 4600
+Wire Wire Line
+	6300 3800 6000 3800
+Wire Wire Line
+	6000 3800 6000 3700
+Text Label 5400 3900 0    60   ~ 0
+U0_TX
+Text Label 5400 4000 0    60   ~ 0
+U0_RX
+Text Label 5400 4100 0    60   ~ 0
+~U0_CTX
+Text Label 5400 4200 0    60   ~ 0
+~U0_RTS
+Text Label 5400 4800 0    60   ~ 0
+U1_TX
+Text Label 5400 4900 0    60   ~ 0
+U1_RX
+Text Label 5400 5000 0    60   ~ 0
+~U1_CTX
+Text Label 5400 5100 0    60   ~ 0
+~U1_RTS
 $EndSCHEMATC

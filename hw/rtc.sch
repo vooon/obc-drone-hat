@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:rpi_con
 LIBS:ic
+LIBS:dronecode_con
 LIBS:obc-drone-hat-cache
 EELAYER 25 0
 EELAYER END

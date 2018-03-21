@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DC-I2C
+F https://wiki.dronecode.org/workgroup/connectors/start
+$ENDCMP
+#
+$CMP DC-Telemetry
+F https://wiki.dronecode.org/workgroup/connectors/start
+$ENDCMP
+#
+#End Doc Library
