@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 2 5
+Sheet 2 7
 Title "OBC Drone Hat"
 Date "2018-03-19"
 Rev ""
@@ -494,4 +494,56 @@ F 3 "" H 3650 8000 50  0001 C CNN
 $EndComp
 Text Notes 3400 7700 0    60   ~ 0
 Zero voltage drop diode circuit\nRecommended for HAT power supply
+Text GLabel 6150 2450 2    60   Input ~ 0
+~STM_INT
+Wire Wire Line
+	6150 2450 5250 2450
+Text GLabel 6150 3750 2    60   Output ~ 0
+BCM20_SPI1_MOSI
+Text GLabel 6150 3850 2    60   Output ~ 0
+BCM21_SPI1_SCLK
+Text GLabel 6150 3650 2    60   Output ~ 0
+~RPI_SPI1_CE2
+Text GLabel 2800 3650 0    60   Input ~ 0
+BCM19_SPI1_MISO
+Wire Wire Line
+	5250 3650 6150 3650
+Wire Wire Line
+	5250 3750 6150 3750
+Wire Wire Line
+	5250 3850 6150 3850
+Wire Wire Line
+	2800 3650 3550 3650
+Text GLabel 6150 2650 2    60   Input ~ 0
+CFG_ID0
+Text GLabel 6150 2750 2    60   Input ~ 0
+CFG_ID1
+Wire Wire Line
+	6150 2650 5250 2650
+Wire Wire Line
+	6150 2750 5250 2750
+Text GLabel 2800 3750 0    60   Output ~ 0
+BCM26
+Text GLabel 2800 3550 0    60   BiDi ~ 0
+BCM13
+Wire Wire Line
+	3550 3550 2800 3550
+Wire Wire Line
+	2800 3750 3550 3750
+Text GLabel 2800 3350 0    60   BiDi ~ 0
+BCM5
+Text GLabel 2800 3450 0    60   BiDi ~ 0
+BCM6
+Wire Wire Line
+	2800 3350 3550 3350
+Wire Wire Line
+	3550 3450 2800 3450
+Text GLabel 6150 3450 2    60   BiDi ~ 0
+BCM12
+Text GLabel 6150 2950 2    60   BiDi ~ 0
+BCM25
+Wire Wire Line
+	6150 2950 5250 2950
+Wire Wire Line
+	5250 3450 6150 3450
 $EndSCHEMATC

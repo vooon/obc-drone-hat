@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 4 5
+Sheet 4 7
 Title "OBC Drone Hat"
 Date "2018-03-19"
 Rev ""
