@@ -185,11 +185,11 @@ X ~ 8 300 200 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# dronecode_con_DC-I2C
+# dronecode-conn_DC-I2C
 #
-DEF dronecode_con_DC-I2C XP 0 40 Y Y 1 F N
+DEF dronecode-conn_DC-I2C XP 0 40 Y Y 1 F N
 F0 "XP" -100 350 60 H V C CNN
-F1 "dronecode_con_DC-I2C" 0 -350 60 H V C CNN
+F1 "dronecode-conn_DC-I2C" 0 -350 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 $FPLIST
@@ -205,11 +205,11 @@ X GND 4 -400 -150 200 R 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# dronecode_con_DC-Telemetry
+# dronecode-conn_DC-Telemetry
 #
-DEF dronecode_con_DC-Telemetry XP 0 40 Y Y 1 F N
+DEF dronecode-conn_DC-Telemetry XP 0 40 Y Y 1 F N
 F0 "XP" -100 450 60 H V C CNN
-F1 "dronecode_con_DC-Telemetry" 0 -450 60 H V C CNN
+F1 "dronecode-conn_DC-Telemetry" 0 -450 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 $FPLIST
@@ -227,11 +227,11 @@ X GND 6 -400 -250 200 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# dronecode_con_FrSky-XSR
+# dronecode-conn_FrSky-XSR
 #
-DEF dronecode_con_FrSky-XSR XP 0 40 Y Y 1 F N
+DEF dronecode-conn_FrSky-XSR XP 0 40 Y Y 1 F N
 F0 "XP" -100 450 60 H V C CNN
-F1 "dronecode_con_FrSky-XSR" 0 -450 60 H V C CNN
+F1 "dronecode-conn_FrSky-XSR" 0 -450 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -245,11 +245,11 @@ X GND 6 -400 -250 200 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# dronecode_con_stm_swdo
+# dronecode-conn_stm_swdo
 #
-DEF dronecode_con_stm_swdo XP 0 40 Y Y 1 F N
+DEF dronecode-conn_stm_swdo XP 0 40 Y Y 1 F N
 F0 "XP" -100 450 60 H V C CNN
-F1 "dronecode_con_stm_swdo" 0 -450 60 H V C CNN
+F1 "dronecode-conn_stm_swdo" 0 -450 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -263,11 +263,11 @@ X SWO 6 -400 -250 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ic_ASFL1
+# hat-ic_ASFL1
 #
-DEF ic_ASFL1 ZQ 0 40 Y Y 1 F N
+DEF hat-ic_ASFL1 ZQ 0 40 Y Y 1 F N
 F0 "ZQ" -150 300 50 H V C CNN
-F1 "ic_ASFL1" 0 -400 50 H V C CNN
+F1 "hat-ic_ASFL1" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS ASFL1
@@ -285,11 +285,11 @@ X Vdd 4 -450 -150 200 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# ic_CAT24
+# hat-ic_CAT24
 #
-DEF ic_CAT24 DD 0 40 Y Y 1 F N
+DEF hat-ic_CAT24 DD 0 40 Y Y 1 F N
 F0 "DD" -250 450 60 H V C CNN
-F1 "ic_CAT24" 0 -450 60 H V C CNN
+F1 "hat-ic_CAT24" 0 -450 60 H V C CNN
 F2 "" -1600 1450 60 V I C CNN
 F3 "" -1600 1450 60 V I C CNN
 $FPLIST
@@ -311,11 +311,11 @@ X Vcc 8 550 -150 200 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# ic_DMG2305UX
+# hat-ic_DMG2305UX
 #
-DEF ic_DMG2305UX VT 0 0 Y N 1 F N
+DEF hat-ic_DMG2305UX VT 0 0 Y N 1 F N
 F0 "VT" 200 50 50 H V L CNN
-F1 "ic_DMG2305UX" 200 -50 50 H V L CNN
+F1 "hat-ic_DMG2305UX" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -342,11 +342,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ic_DMMT5401
+# hat-ic_DMMT5401
 #
-DEF ic_DMMT5401 VT 0 0 Y N 2 L N
+DEF hat-ic_DMMT5401 VT 0 0 Y N 2 L N
 F0 "VT" 200 50 50 H V L CNN
-F1 "ic_DMMT5401" 200 -50 50 H V L CNN
+F1 "hat-ic_DMMT5401" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -370,11 +370,11 @@ X E2 5 100 -200 100 U 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
-# ic_DS3231
+# hat-ic_DS3231
 #
-DEF ic_DS3231 DD 0 40 Y Y 1 F N
+DEF hat-ic_DS3231 DD 0 40 Y Y 1 F N
 F0 "DD" -400 450 60 H V C CNN
-F1 "ic_DS3231" 0 -450 60 H V C CNN
+F1 "hat-ic_DS3231" 0 -450 60 H V C CNN
 F2 "" 0 50 60 H I C CNN
 F3 "" 0 50 60 H I C CNN
 DRAW
@@ -399,11 +399,11 @@ X nc 9 -700 -950 200 R 50 50 1 1 N N
 ENDDRAW
 ENDDEF
 #
-# ic_MAX3109
+# hat-ic_MAX3109
 #
-DEF ic_MAX3109 DD 0 40 Y Y 1 F N
+DEF hat-ic_MAX3109 DD 0 40 Y Y 1 F N
 F0 "DD" -500 1200 60 H V C CNN
-F1 "ic_MAX3109" 0 -1200 60 H V C CNN
+F1 "hat-ic_MAX3109" 0 -1200 60 H V C CNN
 F2 "" 0 -300 60 H I C CNN
 F3 "" 0 -300 60 H I C CNN
 DRAW
@@ -533,11 +533,32 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# rpi_con_Rpi_40PIN
+# poweric_NCP361SN
 #
-DEF rpi_con_Rpi_40PIN XP 0 40 Y Y 1 F N
+DEF poweric_NCP361SN DA 0 40 Y Y 1 F N
+F0 "DA" 0 450 60 H V C CNN
+F1 "poweric_NCP361SN" 0 -400 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+ALIAS NCV361SN
+$FPLIST
+ SOT-23-5
+$ENDFPLIST
+DRAW
+S -300 400 300 -350 0 1 0 N
+X IN 1 -500 300 200 R 50 50 1 1 W
+X GND 2 500 -250 200 L 50 50 1 1 W
+X ~EN 3 -500 -150 200 R 50 50 1 1 I
+X ~FLAG 4 -500 -250 200 R 50 50 1 1 C
+X OUT 5 500 300 200 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# rpi-conn_Rpi_40PIN
+#
+DEF rpi-conn_Rpi_40PIN XP 0 40 Y Y 1 F N
 F0 "XP" -550 1200 60 H V C CNN
-F1 "rpi_con_Rpi_40PIN" 50 -1200 60 H V C CNN
+F1 "rpi-conn_Rpi_40PIN" 50 -1200 60 H V C CNN
 F2 "" -350 100 60 H I C CNN
 F3 "" -350 100 60 H I C CNN
 DRAW

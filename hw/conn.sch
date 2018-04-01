@@ -98,7 +98,7 @@ BCM5
 Text GLabel 3000 5150 0    60   BiDi ~ 0
 BCM6
 $Comp
-L dronecode_con:DC-I2C XP?
+L dronecode-conn:DC-I2C XP?
 U 1 1 5AC44595
 P 3800 3300
 F 0 "XP?" H 4027 3353 60  0000 L CNN

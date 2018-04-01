@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ic:DS3231 DD?
+L hat-ic:DS3231 DD?
 U 1 1 5AB3B4DF
 P 4400 5000
 F 0 "DD?" H 4000 5450 60  0000 C CNN

@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L rpi_con:Rpi_40PIN XP?
+L rpi-conn:Rpi_40PIN XP?
 U 1 1 5AAFFE0B
 P 4400 2900
 F 0 "XP?" H 3850 4100 60  0000 C CNN
@@ -150,7 +150,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 3050 3550 3050
 $Comp
-L ic:CAT24 DD?
+L hat-ic:CAT24 DD?
 U 1 1 5AB0087D
 P 4300 6300
 F 0 "DD?" H 4050 6750 60  0000 C CNN
@@ -312,7 +312,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 2650 2800 2650
 $Comp
-L ic:DMG2305UX VT?
+L hat-ic:DMG2305UX VT?
 U 1 1 5AB12B0E
 P 4300 8350
 F 0 "VT?" V 4550 8450 50  0000 L CNN
@@ -397,28 +397,6 @@ Wire Wire Line
 	3800 9450 3800 9550
 Wire Wire Line
 	4800 9450 4800 9550
-$Comp
-L ic:DMMT5401 VT?
-U 1 1 5AB144D9
-P 3900 8700
-F 0 "VT?" H 4100 8750 50  0000 L CNN
-F 1 "DMMT5401" H 4100 8650 50  0000 L CNN
-F 2 "" H 4100 8800 50  0001 C CNN
-F 3 "" H 3900 8700 50  0001 C CNN
-	1    3900 8700
-	-1   0    0    1   
-$EndComp
-$Comp
-L ic:DMMT5401 VT?
-U 2 1 5AB14574
-P 4700 8700
-F 0 "VT?" H 4900 8750 50  0000 L CNN
-F 1 "DMMT5401" H 4900 8650 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 4900 8800 50  0001 C CNN
-F 3 "" H 4700 8700 50  0001 C CNN
-	2    4700 8700
-	1    0    0    1   
-$EndComp
 $Comp
 L power:+5VP #PWR011
 U 1 1 5AB14AE1
@@ -586,4 +564,26 @@ Wire Wire Line
 Connection ~ 5950 8100
 Text Notes 5650 8350 0    60   ~ 0
 Use RPi +3.3\nas powe source
+$Comp
+L hat-ic:DMMT5401 VT?
+U 1 1 5AC552B8
+P 3900 8700
+F 0 "VT?" H 4090 8654 50  0000 L CNN
+F 1 "DMMT5401" H 4090 8745 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 4100 8800 50  0001 C CNN
+F 3 "" H 3900 8700 50  0001 C CNN
+	1    3900 8700
+	-1   0    0    1   
+$EndComp
+$Comp
+L hat-ic:DMMT5401 VT?
+U 2 1 5AC553C3
+P 4700 8700
+F 0 "VT?" H 4891 8654 50  0000 L CNN
+F 1 "DMMT5401" H 4891 8745 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 4900 8800 50  0001 C CNN
+F 3 "" H 4700 8700 50  0001 C CNN
+	2    4700 8700
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ic:MAX3109 DD?
+L hat-ic:MAX3109 DD?
 U 1 1 5AB1B0A7
 P 4250 6600
 F 0 "DD?" H 3750 7800 60  0000 C CNN
@@ -146,7 +146,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 5200 3150 5100
 $Comp
-L dronecode_con:DC-Telemetry XP?
+L dronecode-conn:DC-Telemetry XP?
 U 1 1 5AB2FA79
 P 6550 5750
 F 0 "XP?" H 6450 6200 60  0000 C CNN
@@ -157,7 +157,7 @@ F 3 "" H 6550 5750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dronecode_con:DC-Telemetry XP?
+L dronecode-conn:DC-Telemetry XP?
 U 1 1 5AB2FFF0
 P 6550 6650
 F 0 "XP?" H 6450 7100 60  0000 C CNN
@@ -260,7 +260,7 @@ Text Label 5250 6700 0    60   ~ 0
 Text Label 5250 6800 0    60   ~ 0
 ~U1_RTS
 $Comp
-L ic:ASFL1 ZQ?
+L hat-ic:ASFL1 ZQ?
 U 1 1 5AB33753
 P 3900 3400
 F 0 "ZQ?" H 3750 3700 50  0000 C CNN
