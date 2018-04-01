@@ -973,4 +973,6 @@ NoConn ~ 6650 2950
 NoConn ~ 6650 2850
 NoConn ~ 6650 2750
 NoConn ~ 6650 2550
+Text Notes 6850 5750 0    60   ~ 0
+NOTE: WS_DOUT can be implemented\non TIM17 CH1 (PB9), or USART5 (PB3).\n\nDecided to leave only USART5 because\ni implemented usart based driver prev.
 $EndSCHEMATC
