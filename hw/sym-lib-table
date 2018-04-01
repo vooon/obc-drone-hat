@@ -3,4 +3,5 @@
   (lib (name hat-ic)(type Legacy)(uri ${KIPRJMOD}/hat-ic.lib)(options "")(descr ""))
   (lib (name dronecode-conn)(type Legacy)(uri ${KIPRJMOD}/dronecode-conn.lib)(options "")(descr ""))
   (lib (name poweric)(type Legacy)(uri /home/vovan/kicad/lpdtrig-hw/hw_kicad/library/poweric.lib)(options "")(descr ""))
+  (lib (name leds)(type Legacy)(uri /home/vovan/kicad/lpdtrig-hw/hw_kicad/library/leds.lib)(options "")(descr ""))
 )

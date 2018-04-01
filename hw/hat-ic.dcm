@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NC7SZ157P6X
+D 2-Input Non-Inverting Multiplexer
+K MUX
+F https://www.terraelectronica.ru/pdf/show?pdf_file=%252Fds%252Fpdf%252FN%252Fnc7sz157p6x.pdf
+$ENDCMP
+#
+#End Doc Library
