@@ -17,137 +17,375 @@ $EndDescr
 $Comp
 L Switch:SW_DIP_x04 SW?
 U 1 1 5AC0CE65
-P 3750 2000
-F 0 "SW?" H 3750 2467 50  0000 C CNN
-F 1 "SW_DIP_x04" H 3750 2376 50  0000 C CNN
-F 2 "" H 3750 2000 50  0001 C CNN
-F 3 "" H 3750 2000 50  0001 C CNN
-	1    3750 2000
+P 4250 3150
+F 0 "SW?" H 4250 3617 50  0000 C CNN
+F 1 "SW_DIP_x04" H 4250 3526 50  0000 C CNN
+F 2 "" H 4250 3150 50  0001 C CNN
+F 3 "" H 4250 3150 50  0001 C CNN
+	1    4250 3150
 	1    0    0    -1  
 $EndComp
-Text GLabel 2650 1800 0    60   UnSpc ~ 0
+Text GLabel 3150 2950 0    60   UnSpc ~ 0
 CFG_ID0
-Text GLabel 2650 1900 0    60   UnSpc ~ 0
+Text GLabel 3150 3050 0    60   UnSpc ~ 0
 CFG_ID1
 Wire Wire Line
-	3450 1800 2650 1800
+	3950 2950 3450 2950
 Wire Wire Line
-	2650 1900 3450 1900
+	3150 3050 3550 3050
 $Comp
 L power:GND #PWR?
 U 1 1 5AC0D0C3
-P 4150 2250
-F 0 "#PWR?" H 4150 2000 50  0001 C CNN
-F 1 "GND" H 4155 2077 50  0000 C CNN
-F 2 "" H 4150 2250 50  0001 C CNN
-F 3 "" H 4150 2250 50  0001 C CNN
-	1    4150 2250
+P 4650 3400
+F 0 "#PWR?" H 4650 3150 50  0001 C CNN
+F 1 "GND" H 4655 3227 50  0000 C CNN
+F 2 "" H 4650 3400 50  0001 C CNN
+F 3 "" H 4650 3400 50  0001 C CNN
+	1    4650 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 1800 4150 1800
+	4550 2950 4650 2950
 Wire Wire Line
-	4150 1800 4150 1900
+	4650 2950 4650 3050
 Wire Wire Line
-	4050 1900 4150 1900
-Connection ~ 4150 1900
+	4550 3050 4650 3050
+Connection ~ 4650 3050
 Wire Wire Line
-	4150 1900 4150 2000
+	4650 3050 4650 3150
 Wire Wire Line
-	4050 2000 4150 2000
-Connection ~ 4150 2000
+	4550 3150 4650 3150
+Connection ~ 4650 3150
 Wire Wire Line
-	4150 2000 4150 2100
+	4650 3150 4650 3250
 Wire Wire Line
-	4050 2100 4150 2100
-Connection ~ 4150 2100
+	4550 3250 4650 3250
+Connection ~ 4650 3250
 Wire Wire Line
-	4150 2100 4150 2250
-Text GLabel 2650 2100 0    60   UnSpc ~ 0
+	4650 3250 4650 3400
+Text GLabel 3150 3250 0    60   UnSpc ~ 0
 ~HAT_ID_WE
 Wire Wire Line
-	2650 2100 3450 2100
-Text GLabel 2650 2000 0    60   UnSpc ~ 0
+	3150 3250 3950 3250
+Text GLabel 3150 3150 0    60   UnSpc ~ 0
 CFG_ID2
 Wire Wire Line
-	2650 2000 3450 2000
-Text GLabel 3500 4700 2    60   Output ~ 0
+	3150 3150 3650 3150
+Text GLabel 4800 4250 0    60   Input ~ 0
 RPI_TX
-Text GLabel 3500 4800 2    60   Input ~ 0
+Text GLabel 4800 4350 0    60   Output ~ 0
 RPI_RX
-Text GLabel 3500 5350 2    60   Output ~ 0
+Text GLabel 4450 7300 2    60   Input ~ 0
 BCM20_SPI1_MOSI
-Text GLabel 3500 5450 2    60   Output ~ 0
+Text GLabel 4450 7400 2    60   Input ~ 0
 BCM21_SPI1_SCLK
-Text GLabel 3500 5250 2    60   Output ~ 0
+Text GLabel 4450 7200 2    60   Input ~ 0
 ~RPI_SPI1_CE2
-Text GLabel 3500 5050 2    60   BiDi ~ 0
+Text GLabel 4450 7100 2    60   BiDi ~ 0
 BCM12
-Text GLabel 3100 3250 0    60   BiDi ~ 0
+Text GLabel 2700 4350 0    60   BiDi ~ 0
 RPI_SCL
-Text GLabel 3100 3350 0    60   BiDi ~ 0
+Text GLabel 2700 4450 0    60   BiDi ~ 0
 RPI_SDA
-Text GLabel 3000 5350 0    60   Input ~ 0
+Text GLabel 3550 7400 0    60   Output ~ 0
 BCM19_SPI1_MISO
-Text GLabel 3000 5450 0    60   Output ~ 0
+Text GLabel 3550 7500 0    60   Input ~ 0
 BCM26
-Text GLabel 3000 5250 0    60   BiDi ~ 0
+Text GLabel 3550 7300 0    60   BiDi ~ 0
 BCM13
-Text GLabel 3000 5050 0    60   BiDi ~ 0
+Text GLabel 3550 7100 0    60   BiDi ~ 0
 BCM5
-Text GLabel 3000 5150 0    60   BiDi ~ 0
+Text GLabel 3550 7200 0    60   BiDi ~ 0
 BCM6
 $Comp
 L dronecode-conn:DC-I2C XP?
 U 1 1 5AC44595
-P 3800 3300
-F 0 "XP?" H 4027 3353 60  0000 L CNN
-F 1 "DC-I2C" H 4027 3247 60  0000 L CNN
-F 2 "" H 3800 3300 60  0001 C CNN
-F 3 "https://wiki.dronecode.org/workgroup/connectors/start" H 3800 3300 60  0001 C CNN
-	1    3800 3300
+P 3400 4400
+F 0 "XP?" H 3627 4453 60  0000 L CNN
+F 1 "DC-I2C" H 3627 4347 60  0000 L CNN
+F 2 "" H 3400 4400 60  0001 C CNN
+F 3 "https://wiki.dronecode.org/workgroup/connectors/start" H 3400 4400 60  0001 C CNN
+	1    3400 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 3250 3400 3250
+	2700 4350 3000 4350
 Wire Wire Line
-	3100 3350 3400 3350
+	2700 4450 3000 4450
 $Comp
 L power:GND #PWR?
 U 1 1 5AC44B9B
-P 3300 3550
-F 0 "#PWR?" H 3300 3300 50  0001 C CNN
-F 1 "GND" H 3305 3377 50  0000 C CNN
-F 2 "" H 3300 3550 50  0001 C CNN
-F 3 "" H 3300 3550 50  0001 C CNN
-	1    3300 3550
+P 2900 4650
+F 0 "#PWR?" H 2900 4400 50  0001 C CNN
+F 1 "GND" H 2905 4477 50  0000 C CNN
+F 2 "" H 2900 4650 50  0001 C CNN
+F 3 "" H 2900 4650 50  0001 C CNN
+	1    2900 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5AC44BF4
-P 3300 3050
-F 0 "#PWR?" H 3300 2900 50  0001 C CNN
-F 1 "+5V" H 3315 3223 50  0000 C CNN
-F 2 "" H 3300 3050 50  0001 C CNN
-F 3 "" H 3300 3050 50  0001 C CNN
-	1    3300 3050
+P 2900 4150
+F 0 "#PWR?" H 2900 4000 50  0001 C CNN
+F 1 "+5V" H 2915 4323 50  0000 C CNN
+F 2 "" H 2900 4150 50  0001 C CNN
+F 3 "" H 2900 4150 50  0001 C CNN
+	1    2900 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 3150 3300 3150
+	3000 4250 2900 4250
 Wire Wire Line
-	3300 3150 3300 3050
+	2900 4250 2900 4150
 Wire Wire Line
-	3300 3550 3300 3450
+	2900 4650 2900 4550
 Wire Wire Line
-	3300 3450 3400 3450
-Text GLabel 3200 6500 0    60   Output ~ 0
+	2900 4550 3000 4550
+Text GLabel 3250 5750 0    60   Output ~ 0
 SERVO0
-Text GLabel 3200 6600 0    60   Output ~ 0
+Text GLabel 3250 5850 0    60   Output ~ 0
 SERVO1
-Text GLabel 3200 6700 0    60   Output ~ 0
+Text GLabel 3250 5950 0    60   Output ~ 0
 SERVO2
-Text GLabel 3200 6800 0    60   Output ~ 0
+Text GLabel 3250 6050 0    60   Output ~ 0
 SERVO3
+$Comp
+L dronecode-conn:Servo-Conn4 XP?
+U 1 1 5AE13059
+P 3700 5900
+F 0 "XP?" H 3600 6200 60  0000 L CNN
+F 1 "SERVO" H 3600 5550 60  0000 L CNN
+F 2 "" H 3650 5900 60  0001 C CNN
+F 3 "" H 3650 5900 60  0001 C CNN
+	1    3700 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L dronecode-conn:Servo-Conn4 XP?
+U 2 1 5AE130D9
+P 4350 5900
+F 0 "XP?" H 4250 6200 60  0000 L CNN
+F 1 "Servo-Conn4" H 4477 5847 60  0001 L CNN
+F 2 "" H 4300 5900 60  0001 C CNN
+F 3 "" H 4300 5900 60  0001 C CNN
+	2    4350 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L dronecode-conn:Servo-Conn4 XP?
+U 3 1 5AE13114
+P 5000 5900
+F 0 "XP?" H 4900 6200 60  0000 L CNN
+F 1 "Servo-Conn4" H 5127 5847 60  0001 L CNN
+F 2 "" H 4950 5900 60  0001 C CNN
+F 3 "" H 4950 5900 60  0001 C CNN
+	3    5000 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5750 3400 5750
+Wire Wire Line
+	3250 5850 3400 5850
+Wire Wire Line
+	3250 5950 3400 5950
+Wire Wire Line
+	3250 6050 3400 6050
+$Comp
+L power:GND #PWR?
+U 1 1 5AE14A11
+P 4600 6200
+F 0 "#PWR?" H 4600 5950 50  0001 C CNN
+F 1 "GND" H 4605 6027 50  0000 C CNN
+F 2 "" H 4600 6200 50  0001 C CNN
+F 3 "" H 4600 6200 50  0001 C CNN
+	1    4600 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5AE14A3F
+P 3950 5600
+F 0 "#PWR?" H 3950 5450 50  0001 C CNN
+F 1 "+5V" H 3965 5773 50  0000 C CNN
+F 2 "" H 3950 5600 50  0001 C CNN
+F 3 "" H 3950 5600 50  0001 C CNN
+	1    3950 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6050 3950 6050
+Wire Wire Line
+	3950 6050 3950 5950
+Wire Wire Line
+	4050 5750 3950 5750
+Connection ~ 3950 5750
+Wire Wire Line
+	3950 5750 3950 5600
+Wire Wire Line
+	4050 5850 3950 5850
+Connection ~ 3950 5850
+Wire Wire Line
+	3950 5850 3950 5750
+Wire Wire Line
+	4050 5950 3950 5950
+Connection ~ 3950 5950
+Wire Wire Line
+	3950 5950 3950 5850
+Wire Wire Line
+	4700 5750 4600 5750
+Wire Wire Line
+	4600 5750 4600 5850
+Wire Wire Line
+	4700 5850 4600 5850
+Connection ~ 4600 5850
+Wire Wire Line
+	4600 5850 4600 5950
+Wire Wire Line
+	4700 5950 4600 5950
+Connection ~ 4600 5950
+Wire Wire Line
+	4600 5950 4600 6050
+Wire Wire Line
+	4700 6050 4600 6050
+Connection ~ 4600 6050
+Wire Wire Line
+	4600 6050 4600 6200
+$Comp
+L Connector_Generic:Conn_01x04 XP?
+U 1 1 5AE192BA
+P 5750 3050
+F 0 "XP?" H 5830 3042 50  0000 L CNN
+F 1 "CFG ID" H 5830 2951 50  0000 L CNN
+F 2 "" H 5750 3050 50  0001 C CNN
+F 3 "~" H 5750 3050 50  0001 C CNN
+	1    5750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2950 3450 2350
+Wire Wire Line
+	3450 2350 5450 2350
+Wire Wire Line
+	5450 2350 5450 2950
+Wire Wire Line
+	5450 2950 5550 2950
+Connection ~ 3450 2950
+Wire Wire Line
+	3450 2950 3150 2950
+Wire Wire Line
+	3550 3050 3550 2450
+Wire Wire Line
+	3550 2450 5350 2450
+Wire Wire Line
+	5350 2450 5350 3050
+Wire Wire Line
+	5350 3050 5550 3050
+Connection ~ 3550 3050
+Wire Wire Line
+	3550 3050 3950 3050
+Wire Wire Line
+	3650 3150 3650 2550
+Wire Wire Line
+	3650 2550 5250 2550
+Wire Wire Line
+	5250 2550 5250 3150
+Wire Wire Line
+	5250 3150 5550 3150
+Connection ~ 3650 3150
+Wire Wire Line
+	3650 3150 3950 3150
+Wire Wire Line
+	5550 3250 4650 3250
+$Comp
+L dronecode-conn:DC-Telemetry XP?
+U 1 1 5AE1F895
+P 5550 4400
+F 0 "XP?" H 5778 4453 60  0000 L CNN
+F 1 "RPi Console" H 5778 4347 60  0000 L CNN
+F 2 "" H 5550 4400 60  0001 C CNN
+F 3 "https://wiki.dronecode.org/workgroup/connectors/start" H 5550 4400 60  0001 C CNN
+	1    5550 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5AE1FA9F
+P 5050 4800
+F 0 "#PWR?" H 5050 4550 50  0001 C CNN
+F 1 "GND" H 5055 4627 50  0000 C CNN
+F 2 "" H 5050 4800 50  0001 C CNN
+F 3 "" H 5050 4800 50  0001 C CNN
+	1    5050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5AE1FAB8
+P 5050 4050
+F 0 "#PWR?" H 5050 3900 50  0001 C CNN
+F 1 "+5V" H 5065 4223 50  0000 C CNN
+F 2 "" H 5050 4050 50  0001 C CNN
+F 3 "" H 5050 4050 50  0001 C CNN
+	1    5050 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4250 5150 4250
+Wire Wire Line
+	5150 4350 4800 4350
+Wire Wire Line
+	5150 4150 5050 4150
+Wire Wire Line
+	5050 4150 5050 4050
+Wire Wire Line
+	5150 4650 5050 4650
+Wire Wire Line
+	5050 4650 5050 4800
+NoConn ~ 5150 4550
+NoConn ~ 5150 4450
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even XP?
+U 1 1 5AE27376
+P 3950 7300
+F 0 "XP?" H 4000 7717 50  0000 C CNN
+F 1 "UNUSED PINS" H 4000 7626 50  0000 C CNN
+F 2 "" H 3950 7300 50  0001 C CNN
+F 3 "~" H 3950 7300 50  0001 C CNN
+	1    3950 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5AE2781B
+P 4450 7650
+F 0 "#PWR?" H 4450 7400 50  0001 C CNN
+F 1 "GND" H 4455 7477 50  0000 C CNN
+F 2 "" H 4450 7650 50  0001 C CNN
+F 3 "" H 4450 7650 50  0001 C CNN
+	1    4450 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 7100 3750 7100
+Wire Wire Line
+	3550 7200 3750 7200
+Wire Wire Line
+	3550 7300 3750 7300
+Wire Wire Line
+	3550 7400 3750 7400
+Wire Wire Line
+	3550 7500 3750 7500
+Wire Wire Line
+	4250 7100 4450 7100
+Wire Wire Line
+	4450 7200 4250 7200
+Wire Wire Line
+	4450 7300 4250 7300
+Wire Wire Line
+	4450 7400 4250 7400
+Wire Wire Line
+	4250 7500 4450 7500
+Wire Wire Line
+	4450 7500 4450 7650
 $EndSCHEMATC
