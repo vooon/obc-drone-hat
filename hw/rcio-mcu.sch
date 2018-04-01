@@ -14,4 +14,337 @@ Comment2 "Ermakov V.A."
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L dronecode_con:stm_swdo XP?
+U 1 1 5AC130B8
+P 3450 8650
+F 0 "XP?" H 3678 8703 60  0000 L CNN
+F 1 "stm_swdo" H 3678 8597 60  0000 L CNN
+F 2 "" H 3450 8650 60  0001 C CNN
+F 3 "" H 3450 8650 60  0001 C CNN
+	1    3450 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32:STM32F030CCTx DD?
+U 1 1 5AC13238
+P 8250 3750
+F 0 "DD?" H 5550 5450 50  0000 C CNN
+F 1 "STM32F030CCTx" H 5800 2050 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 11050 5325 50  0001 R TNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf" H 8250 3750 50  0001 C CNN
+	1    8250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5AC1340C
+P 12750 8700
+F 0 "#PWR?" H 12750 8450 50  0001 C CNN
+F 1 "GND" H 12755 8527 50  0000 C CNN
+F 2 "" H 12750 8700 50  0001 C CNN
+F 3 "" H 12750 8700 50  0001 C CNN
+	1    12750 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5AC1346E
+P 12750 7950
+F 0 "#PWR?" H 12750 7800 50  0001 C CNN
+F 1 "+3.3V" H 12765 8123 50  0000 C CNN
+F 2 "" H 12750 7950 50  0001 C CNN
+F 3 "" H 12750 7950 50  0001 C CNN
+	1    12750 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5AC308DD
+P 8250 1700
+F 0 "#PWR?" H 8250 1550 50  0001 C CNN
+F 1 "+3.3V" H 8265 1873 50  0000 C CNN
+F 2 "" H 8250 1700 50  0001 C CNN
+F 3 "" H 8250 1700 50  0001 C CNN
+	1    8250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5AC308EC
+P 8250 5750
+F 0 "#PWR?" H 8250 5500 50  0001 C CNN
+F 1 "GND" H 8255 5577 50  0000 C CNN
+F 2 "" H 8250 5750 50  0001 C CNN
+F 3 "" H 8250 5750 50  0001 C CNN
+	1    8250 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 5450 8050 5600
+Wire Wire Line
+	8050 5600 8150 5600
+Wire Wire Line
+	8350 5600 8350 5450
+Wire Wire Line
+	8250 5450 8250 5600
+Connection ~ 8250 5600
+Wire Wire Line
+	8250 5600 8350 5600
+Wire Wire Line
+	8150 5450 8150 5600
+Connection ~ 8150 5600
+Wire Wire Line
+	8150 5600 8250 5600
+Wire Wire Line
+	8250 5600 8250 5750
+Wire Wire Line
+	8050 2050 8050 1900
+Wire Wire Line
+	8050 1900 8150 1900
+Wire Wire Line
+	8450 1900 8450 2050
+Wire Wire Line
+	8350 2050 8350 1900
+Connection ~ 8350 1900
+Wire Wire Line
+	8350 1900 8450 1900
+Wire Wire Line
+	8250 2050 8250 1900
+Connection ~ 8250 1900
+Wire Wire Line
+	8250 1900 8350 1900
+Wire Wire Line
+	8250 1900 8250 1700
+Wire Wire Line
+	8150 2050 8150 1900
+Connection ~ 8150 1900
+Wire Wire Line
+	8150 1900 8250 1900
+$Comp
+L Device:C C?
+U 1 1 5AC3127E
+P 12350 8300
+F 0 "C?" H 11850 8450 50  0000 L CNN
+F 1 "0.1" H 12000 8450 50  0000 L CNN
+F 2 "" H 12388 8150 50  0001 C CNN
+F 3 "~" H 12350 8300 50  0001 C CNN
+	1    12350 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5AC31497
+P 12550 8300
+F 0 "C?" H 11850 8350 50  0000 L CNN
+F 1 "0.1" H 12000 8350 50  0000 L CNN
+F 2 "" H 12588 8150 50  0001 C CNN
+F 3 "~" H 12550 8300 50  0001 C CNN
+	1    12550 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5AC314C5
+P 12750 8300
+F 0 "C?" H 11850 8250 50  0000 L CNN
+F 1 "0.1" H 12000 8250 50  0000 L CNN
+F 2 "" H 12788 8150 50  0001 C CNN
+F 3 "~" H 12750 8300 50  0001 C CNN
+	1    12750 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5AC314ED
+P 12950 8300
+F 0 "C?" H 11850 8150 50  0000 L CNN
+F 1 "0.1" H 12000 8150 50  0000 L CNN
+F 2 "" H 12988 8150 50  0001 C CNN
+F 3 "~" H 12950 8300 50  0001 C CNN
+	1    12950 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5AC31513
+P 13150 8300
+F 0 "C?" H 11850 8050 50  0000 L CNN
+F 1 "0.1" H 12000 8050 50  0000 L CNN
+F 2 "" H 13188 8150 50  0001 C CNN
+F 3 "~" H 13150 8300 50  0001 C CNN
+	1    13150 8300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 8150 12350 8050
+Wire Wire Line
+	12350 8050 12550 8050
+Wire Wire Line
+	13150 8050 13150 8150
+Wire Wire Line
+	12950 8150 12950 8050
+Connection ~ 12950 8050
+Wire Wire Line
+	12950 8050 13150 8050
+Wire Wire Line
+	12750 8150 12750 8050
+Connection ~ 12750 8050
+Wire Wire Line
+	12750 8050 12950 8050
+Wire Wire Line
+	12550 8150 12550 8050
+Connection ~ 12550 8050
+Wire Wire Line
+	12550 8050 12750 8050
+Wire Wire Line
+	12750 8050 12750 7950
+Wire Wire Line
+	12350 8450 12350 8550
+Wire Wire Line
+	12350 8550 12550 8550
+Wire Wire Line
+	13150 8550 13150 8450
+Wire Wire Line
+	12950 8450 12950 8550
+Connection ~ 12950 8550
+Wire Wire Line
+	12950 8550 13150 8550
+Wire Wire Line
+	12750 8450 12750 8550
+Connection ~ 12750 8550
+Wire Wire Line
+	12750 8550 12950 8550
+Wire Wire Line
+	12550 8450 12550 8550
+Connection ~ 12550 8550
+Wire Wire Line
+	12550 8550 12750 8550
+Wire Wire Line
+	12750 8550 12750 8700
+Text GLabel 4300 2450 0    60   Input ~ 0
+~STM_RESET
+Wire Wire Line
+	4300 2450 5350 2450
+Text Label 4550 2450 0    60   ~ 0
+~NRST
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5AC3643C
+P 2900 8250
+F 0 "#PWR?" H 2900 8100 50  0001 C CNN
+F 1 "+3.3V" H 2915 8423 50  0000 C CNN
+F 2 "" H 2900 8250 50  0001 C CNN
+F 3 "" H 2900 8250 50  0001 C CNN
+	1    2900 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5AC36455
+P 2900 9050
+F 0 "#PWR?" H 2900 8800 50  0001 C CNN
+F 1 "GND" H 2905 8877 50  0000 C CNN
+F 2 "" H 2900 9050 50  0001 C CNN
+F 3 "" H 2900 9050 50  0001 C CNN
+	1    2900 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 8400 2900 8400
+Wire Wire Line
+	2900 8400 2900 8250
+Wire Wire Line
+	3050 8600 2900 8600
+Wire Wire Line
+	2900 8600 2900 9050
+Wire Wire Line
+	3050 8500 2500 8500
+Wire Wire Line
+	3050 8700 2500 8700
+Wire Wire Line
+	3050 8800 2500 8800
+Wire Wire Line
+	3050 8900 2500 8900
+Text Label 2500 8500 0    60   ~ 0
+SWCLK
+Text Label 2500 8700 0    60   ~ 0
+SWDIO
+Text Label 2500 8800 0    60   ~ 0
+~NRST
+Text Label 2500 8900 0    60   ~ 0
+SWO
+Text GLabel 3450 4850 0    60   Input ~ 0
+RPI_SPI0_MOSI
+Text GLabel 3450 4950 0    60   Output ~ 0
+RPI_SPI0_MISO
+Text GLabel 3450 5050 0    60   Input ~ 0
+RPI_SPI0_SCLK
+Text GLabel 4300 2650 0    60   Input ~ 0
+STM_BOOT0
+Wire Wire Line
+	4300 2650 5350 2650
+Text GLabel 3450 5200 0    60   Input ~ 0
+~RPI_SPI0_CE1
+Text GLabel 3450 5350 0    60   Output ~ 0
+~STM_INT
+Text GLabel 3100 4300 0    60   BiDi ~ 0
+RPI_SCL
+Text GLabel 3100 4200 0    60   BiDi ~ 0
+RPI_SDA
+Text GLabel 4300 2850 0    60   Input ~ 0
+HAT_CLK
+Wire Wire Line
+	4300 2850 5350 2850
+Text GLabel 3500 6500 0    60   Output ~ 0
+SERVO0
+Text GLabel 3500 6600 0    60   Output ~ 0
+SERVO1
+Text GLabel 3500 6700 0    60   Output ~ 0
+SERVO2
+Text GLabel 3500 6800 0    60   Output ~ 0
+SERVO3
+Text GLabel 3100 7300 0    60   UnSpc ~ 0
+ADC_Vbat
+Text GLabel 3100 7400 0    60   UnSpc ~ 0
+ADC_V5hat
+$Comp
+L dronecode_con:FrSky-XSR XP?
+U 1 1 5AC46946
+P 7500 8650
+F 0 "XP?" H 7728 8703 60  0000 L CNN
+F 1 "FrSky-XSR" H 7728 8597 60  0000 L CNN
+F 2 "" H 7500 8650 60  0001 C CNN
+F 3 "" H 7500 8650 60  0001 C CNN
+	1    7500 8650
+	1    0    0    -1  
+$EndComp
+Text Notes 7250 9350 0    60   ~ 0
+NOTE: XSR module uses 5-pin conn.\nI decided to use 6-pin JST GH, to reduce nomenclature.
+$Comp
+L power:GND #PWR?
+U 1 1 5AC47AE2
+P 7000 9000
+F 0 "#PWR?" H 7000 8750 50  0001 C CNN
+F 1 "GND" H 7005 8827 50  0000 C CNN
+F 2 "" H 7000 9000 50  0001 C CNN
+F 3 "" H 7000 9000 50  0001 C CNN
+	1    7000 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 8800 7000 8800
+Wire Wire Line
+	7000 8800 7000 8900
+Wire Wire Line
+	7100 8900 7000 8900
+Connection ~ 7000 8900
+Wire Wire Line
+	7000 8900 7000 9000
+Wire Wire Line
+	7100 8400 6500 8400
+Wire Wire Line
+	7100 8500 6500 8500
+Wire Wire Line
+	7100 8600 6500 8600
 $EndSCHEMATC

@@ -36,17 +36,6 @@ F 3 "" H 5350 5650 50  0001 C CNN
 	1    5350 5650
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3VP #PWR?
-U 1 1 5AB3BD26
-P 5350 5100
-F 0 "#PWR?" H 5500 5050 50  0001 C CNN
-F 1 "+3.3VP" H 5350 5200 50  0000 C CNN
-F 2 "" H 5350 5100 50  0001 C CNN
-F 3 "" H 5350 5100 50  0001 C CNN
-	1    5350 5100
-	1    0    0    -1  
-$EndComp
 Text GLabel 3200 4750 0    60   Output ~ 0
 ~HAT_RST
 Wire Wire Line
@@ -109,6 +98,17 @@ F 1 "0.1" H 5465 5355 50  0000 L CNN
 F 2 "" H 5388 5250 50  0001 C CNN
 F 3 "~" H 5350 5400 50  0001 C CNN
 	1    5350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5AC432E2
+P 5350 5100
+F 0 "#PWR?" H 5350 4950 50  0001 C CNN
+F 1 "+3.3V" H 5500 5200 50  0000 C CNN
+F 2 "" H 5350 5100 50  0001 C CNN
+F 3 "" H 5350 5100 50  0001 C CNN
+	1    5350 5100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

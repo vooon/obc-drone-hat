@@ -1,6 +1,6 @@
 (sym_lib_table
-  (lib (name obc-drone-hat-rescue)(type Legacy)(uri ${KIPRJMOD}/obc-drone-hat-rescue.lib)(options "")(descr ""))
   (lib (name rpi_con)(type Legacy)(uri ${KIPRJMOD}/rpi_con.lib)(options "")(descr ""))
   (lib (name ic)(type Legacy)(uri ${KIPRJMOD}/ic.lib)(options "")(descr ""))
   (lib (name dronecode_con)(type Legacy)(uri ${KIPRJMOD}/dronecode_con.lib)(options "")(descr ""))
+  (lib (name poweric)(type Legacy)(uri /home/vovan/kicad/lpdtrig-hw/hw_kicad/library/poweric.lib)(options "")(descr ""))
 )

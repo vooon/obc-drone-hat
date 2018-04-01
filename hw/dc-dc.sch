@@ -14,4 +14,8 @@ Comment2 "Ermakov V.A."
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text GLabel 3750 3700 0    60   UnSpc ~ 0
+ADC_Vbat
+Text GLabel 3750 3800 0    60   UnSpc ~ 0
+ADC_V5hat
 $EndSCHEMATC
