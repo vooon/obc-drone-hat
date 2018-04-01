@@ -1,38 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:rpi_con
-LIBS:ic
-LIBS:dronecode_con
+EESchema Schematic File Version 4
 LIBS:obc-drone-hat-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
@@ -47,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MAX3109 DD?
+L ic:MAX3109 DD?
 U 1 1 5AB1B0A7
 P 4250 6600
 F 0 "DD?" H 3750 7800 60  0000 C CNN
@@ -58,7 +26,7 @@ F 3 "" H 4250 6300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VP #PWR013
+L power:+3.3VP #PWR013
 U 1 1 5AB1B260
 P 3100 7100
 F 0 "#PWR013" H 3250 7050 50  0001 C CNN
@@ -69,7 +37,7 @@ F 3 "" H 3100 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 5AB1B2D7
 P 3350 8200
 F 0 "#PWR014" H 3350 7950 50  0001 C CNN
@@ -80,28 +48,6 @@ F 3 "" H 3350 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3450 6850
-$Comp
-L C C?
-U 1 1 5AB1B470
-P 3100 7850
-F 0 "C?" H 3125 7950 50  0000 L CNN
-F 1 "0.1" H 3125 7750 50  0000 L CNN
-F 2 "" H 3138 7700 50  0001 C CNN
-F 3 "" H 3100 7850 50  0001 C CNN
-	1    3100 7850
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 5AB1B4D8
-P 3350 7850
-F 0 "C?" H 3375 7950 50  0000 L CNN
-F 1 "1.0" H 3375 7750 50  0000 L CNN
-F 2 "" H 3388 7700 50  0001 C CNN
-F 3 "" H 3350 7850 50  0001 C CNN
-	1    3350 7850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3450 7600 3350 7600
 Wire Wire Line
@@ -109,7 +55,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 7200 3100 7200
 Wire Wire Line
-	3100 7100 3100 7700
+	3100 7100 3100 7200
 Wire Wire Line
 	3100 7300 3450 7300
 Connection ~ 3100 7300
@@ -118,14 +64,14 @@ Wire Wire Line
 Connection ~ 3100 7400
 Connection ~ 3100 7200
 Wire Wire Line
-	3350 8000 3350 8200
+	3350 8000 3350 8100
 Wire Wire Line
 	3350 8100 3100 8100
 Wire Wire Line
 	3100 8100 3100 8000
 Connection ~ 3350 8100
 $Comp
-L +3.3VP #PWR015
+L power:+3.3VP #PWR015
 U 1 1 5AB1B914
 P 2750 6450
 F 0 "#PWR015" H 2900 6400 50  0001 C CNN
@@ -136,7 +82,7 @@ F 3 "" H 2750 6450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R?
+L Device:R R?
 U 1 1 5AB1B9A3
 P 3100 6250
 F 0 "R?" V 3180 6250 50  0000 C CNN
@@ -147,7 +93,7 @@ F 3 "" H 3100 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2750 6450 3450 6450
+	2750 6450 2850 6450
 Wire Wire Line
 	3450 6350 3350 6350
 Wire Wire Line
@@ -177,14 +123,14 @@ Wire Wire Line
 Wire Wire Line
 	3450 6050 2800 6050
 Wire Wire Line
-	2800 6150 3450 6150
+	2800 6150 3350 6150
 Wire Wire Line
 	3250 6250 3350 6250
 Wire Wire Line
 	3350 6250 3350 6150
 Connection ~ 3350 6150
 $Comp
-L GND #PWR016
+L power:GND #PWR016
 U 1 1 5AB1C686
 P 6050 6100
 F 0 "#PWR016" H 6050 5850 50  0001 C CNN
@@ -197,7 +143,7 @@ $EndComp
 Wire Wire Line
 	5050 7400 5150 7400
 Wire Wire Line
-	5150 7400 5150 7750
+	5150 7400 5150 7500
 Wire Wire Line
 	5050 7500 5150 7500
 Connection ~ 5150 7500
@@ -205,7 +151,7 @@ Wire Wire Line
 	5050 7600 5150 7600
 Connection ~ 5150 7600
 $Comp
-L R R?
+L Device:R R?
 U 1 1 5AB1D90A
 P 3150 5350
 F 0 "R?" V 3230 5350 50  0000 C CNN
@@ -216,7 +162,7 @@ F 3 "" H 3150 5350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3.3VP #PWR017
+L power:+3.3VP #PWR017
 U 1 1 5AB1D959
 P 3150 5100
 F 0 "#PWR017" H 3300 5050 50  0001 C CNN
@@ -227,13 +173,13 @@ F 3 "" H 3150 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 5600 3450 5600
+	2800 5600 3150 5600
 Wire Wire Line
 	3150 5600 3150 5500
 Wire Wire Line
 	3150 5200 3150 5100
 $Comp
-L DC-Telemetry XP?
+L dronecode_con:DC-Telemetry XP?
 U 1 1 5AB2FA79
 P 6550 5750
 F 0 "XP?" H 6450 6200 60  0000 C CNN
@@ -244,7 +190,7 @@ F 3 "" H 6550 5750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DC-Telemetry XP?
+L dronecode_con:DC-Telemetry XP?
 U 1 1 5AB2FFF0
 P 6550 6650
 F 0 "XP?" H 6450 7100 60  0000 C CNN
@@ -271,7 +217,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 6800 5050 6800
 $Comp
-L +5V #PWR?
+L power:+5V #PWR?
 U 1 1 5AB3063A
 P 5850 5400
 F 0 "#PWR?" H 5850 5250 50  0001 C CNN
@@ -286,7 +232,7 @@ Wire Wire Line
 Wire Wire Line
 	6050 6000 6050 6100
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5AB30BD8
 P 5150 7750
 F 0 "#PWR?" H 5150 7500 50  0001 C CNN
@@ -297,7 +243,7 @@ F 3 "" H 5150 7750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5AB30BF8
 P 6050 7000
 F 0 "#PWR?" H 6050 6750 50  0001 C CNN
@@ -308,7 +254,7 @@ F 3 "" H 6050 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR?
+L power:+5V #PWR?
 U 1 1 5AB30E1E
 P 5850 6300
 F 0 "#PWR?" H 5850 6150 50  0001 C CNN
@@ -347,7 +293,7 @@ Text Label 5250 6700 0    60   ~ 0
 Text Label 5250 6800 0    60   ~ 0
 ~U1_RTS
 $Comp
-L ASFL1 ZQ?
+L ic:ASFL1 ZQ?
 U 1 1 5AB33753
 P 3900 3400
 F 0 "ZQ?" H 3750 3700 50  0000 C CNN
@@ -358,7 +304,7 @@ F 3 "https://www.terraelectronica.ru/pdf/show?pdf_file=%252Fds%252Fpdf%252FA%252
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VP #PWR?
+L power:+3.3VP #PWR?
 U 1 1 5AB34755
 P 3150 3050
 F 0 "#PWR?" H 3300 3000 50  0001 C CNN
@@ -369,7 +315,7 @@ F 3 "" H 3150 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C?
+L Device:C C?
 U 1 1 5AB3478D
 P 3150 3900
 F 0 "C?" H 3175 4000 50  0000 L CNN
@@ -380,7 +326,7 @@ F 3 "" H 3150 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5AB347BB
 P 3150 4150
 F 0 "#PWR?" H 3150 3900 50  0001 C CNN
@@ -393,10 +339,10 @@ $EndComp
 Wire Wire Line
 	3150 3550 3450 3550
 Wire Wire Line
-	3150 3050 3150 3750
+	3150 3050 3150 3250
 Connection ~ 3150 3550
 Wire Wire Line
-	3150 4050 3150 4150
+	3150 4050 3150 4100
 Wire Wire Line
 	3450 3650 3350 3650
 Wire Wire Line
@@ -407,30 +353,19 @@ Connection ~ 3150 4100
 Wire Wire Line
 	3450 3250 3150 3250
 Connection ~ 3150 3250
-$Comp
-L GS3 J?
-U 1 1 5AB34FDF
-P 5000 3150
-F 0 "J?" H 5050 3350 50  0000 C CNN
-F 1 "GS3" H 5050 2951 50  0000 C CNN
-F 2 "Connectors:GS3" V 5088 3076 50  0001 C CNN
-F 3 "" H 5000 3150 50  0001 C CNN
-	1    5000 3150
-	1    0    0    -1  
-$EndComp
-Text GLabel 4650 3050 0    60   Input ~ 0
+Text GLabel 4800 2400 0    60   Input ~ 0
 RPI_GPCLK0
 Wire Wire Line
-	4850 3250 4350 3250
+	5200 3250 4350 3250
 Wire Wire Line
-	4650 3050 4850 3050
+	4800 2400 5200 2400
 Text Label 4400 3250 0    60   ~ 0
 ZQ_CLK
-Text GLabel 5800 3150 2    60   Output ~ 0
+Text GLabel 5950 2800 2    60   Output ~ 0
 HAT_CLK
 Wire Wire Line
-	5150 3150 5800 3150
-Text Label 5250 3150 0    60   ~ 0
+	5350 2800 5950 2800
+Text Label 5400 2800 0    60   ~ 0
 HAT_CLK
 Text Notes 3600 4400 0    60   ~ 0
 NOTE: fallback clock source\nif i can't setup Raspberry GPCLK0\n\nGPCLK0: 19.2 MHz\nZQ     : 24.0 MHz
@@ -449,4 +384,67 @@ NoConn ~ 5050 7200
 Text GLabel 2800 5600 0    60   Input ~ 0
 ~HAT_RST
 Connection ~ 3150 5600
+Wire Wire Line
+	3100 7300 3100 7400
+Wire Wire Line
+	3100 7400 3100 7700
+Wire Wire Line
+	3100 7200 3100 7300
+Wire Wire Line
+	3350 8100 3350 8200
+Wire Wire Line
+	3350 6450 3450 6450
+Wire Wire Line
+	2850 6450 3350 6450
+Wire Wire Line
+	3350 6150 3450 6150
+Wire Wire Line
+	5150 7500 5150 7600
+Wire Wire Line
+	5150 7600 5150 7750
+Wire Wire Line
+	3150 3550 3150 3750
+Wire Wire Line
+	3150 4100 3150 4150
+Wire Wire Line
+	3150 3250 3150 3550
+Wire Wire Line
+	3150 5600 3450 5600
+$Comp
+L Jumper:Jumper_3_Open JP?
+U 1 1 5AB6CF92
+P 5200 2800
+F 0 "JP?" V 5246 2886 50  0000 L CNN
+F 1 "Jumper_3_Open" V 5155 2886 50  0000 L CNN
+F 2 "" H 5200 2800 50  0001 C CNN
+F 3 "~" H 5200 2800 50  0001 C CNN
+	1    5200 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 2400 5200 2550
+Wire Wire Line
+	5200 3250 5200 3050
+$Comp
+L Device:C C?
+U 1 1 5AC0F665
+P 3100 7850
+F 0 "C?" H 2700 8050 50  0000 L CNN
+F 1 "0.1" H 2850 8050 50  0000 L CNN
+F 2 "" H 3138 7700 50  0001 C CNN
+F 3 "~" H 3100 7850 50  0001 C CNN
+	1    3100 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5AC0F72E
+P 3350 7850
+F 0 "C?" H 2700 7950 50  0000 L CNN
+F 1 "0.1" H 2850 7950 50  0000 L CNN
+F 2 "" H 3388 7700 50  0001 C CNN
+F 3 "~" H 3350 7850 50  0001 C CNN
+	1    3350 7850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

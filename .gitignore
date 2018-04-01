@@ -6,6 +6,8 @@
 *.net
 *.dsn
 
+*rescue*
+
 # C files
 core
 

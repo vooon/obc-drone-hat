@@ -1,38 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:rpi_con
-LIBS:ic
-LIBS:dronecode_con
+EESchema Schematic File Version 4
 LIBS:obc-drone-hat-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -82,4 +50,15 @@ U 5AB4269F
 F0 "DC-DC" 60
 F1 "dc-dc.sch" 60
 $EndSheet
+$Comp
+L Graphic:Logo_Open_Hardware_Large #LOGO?
+U 1 1 5AB63E41
+P 1450 10950
+F 0 "#LOGO?" H 1450 11450 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 1450 10550 50  0001 C CNN
+F 2 "" H 1450 10950 50  0001 C CNN
+F 3 "~" H 1450 10950 50  0001 C CNN
+	1    1450 10950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
