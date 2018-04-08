@@ -71,9 +71,9 @@ Text GLabel 3150 3150 0    60   UnSpc ~ 0
 CFG_ID2
 Wire Wire Line
 	3150 3150 3650 3150
-Text GLabel 4800 4250 0    60   Input ~ 0
+Text GLabel 3500 4250 0    60   Input ~ 0
 RPI_TX
-Text GLabel 4800 4350 0    60   Output ~ 0
+Text GLabel 3500 4350 0    60   Output ~ 0
 RPI_RX
 Text GLabel 4450 7300 2    60   Input ~ 0
 BCM20_SPI1_MOSI
@@ -83,9 +83,9 @@ Text GLabel 4450 7200 2    60   Input ~ 0
 ~RPI_SPI1_CE2
 Text GLabel 4450 7100 2    60   BiDi ~ 0
 BCM12
-Text GLabel 2700 4350 0    60   BiDi ~ 0
+Text GLabel 3550 4450 0    60   BiDi ~ 0
 RPI_SCL
-Text GLabel 2700 4450 0    60   BiDi ~ 0
+Text GLabel 3550 4550 0    60   BiDi ~ 0
 RPI_SDA
 Text GLabel 3550 7400 0    60   Output ~ 0
 BCM19_SPI1_MISO
@@ -97,51 +97,10 @@ Text GLabel 3550 7100 0    60   BiDi ~ 0
 BCM5
 Text GLabel 3550 7200 0    60   BiDi ~ 0
 BCM6
-$Comp
-L dronecode-conn:DC-I2C XP?
-U 1 1 5AC44595
-P 3400 4400
-F 0 "XP?" H 3627 4453 60  0000 L CNN
-F 1 "DC-I2C" H 3627 4347 60  0000 L CNN
-F 2 "" H 3400 4400 60  0001 C CNN
-F 3 "https://wiki.dronecode.org/workgroup/connectors/start" H 3400 4400 60  0001 C CNN
-	1    3400 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2700 4350 3000 4350
+	3550 4450 3850 4450
 Wire Wire Line
-	2700 4450 3000 4450
-$Comp
-L power:GND #PWR?
-U 1 1 5AC44B9B
-P 2900 4650
-F 0 "#PWR?" H 2900 4400 50  0001 C CNN
-F 1 "GND" H 2905 4477 50  0000 C CNN
-F 2 "" H 2900 4650 50  0001 C CNN
-F 3 "" H 2900 4650 50  0001 C CNN
-	1    2900 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5AC44BF4
-P 2900 4150
-F 0 "#PWR?" H 2900 4000 50  0001 C CNN
-F 1 "+5V" H 2915 4323 50  0000 C CNN
-F 2 "" H 2900 4150 50  0001 C CNN
-F 3 "" H 2900 4150 50  0001 C CNN
-	1    2900 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 4250 2900 4250
-Wire Wire Line
-	2900 4250 2900 4150
-Wire Wire Line
-	2900 4650 2900 4550
-Wire Wire Line
-	2900 4550 3000 4550
+	3550 4550 3850 4550
 Text GLabel 3250 5750 0    60   Output ~ 0
 SERVO0
 Text GLabel 3250 5850 0    60   Output ~ 0
@@ -298,52 +257,39 @@ Wire Wire Line
 Wire Wire Line
 	5550 3250 4650 3250
 $Comp
-L dronecode-conn:DC-Telemetry XP?
-U 1 1 5AE1F895
-P 5550 4400
-F 0 "XP?" H 5778 4453 60  0000 L CNN
-F 1 "RPi Console" H 5778 4347 60  0000 L CNN
-F 2 "" H 5550 4400 60  0001 C CNN
-F 3 "https://wiki.dronecode.org/workgroup/connectors/start" H 5550 4400 60  0001 C CNN
-	1    5550 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5AE1FA9F
-P 5050 4800
-F 0 "#PWR?" H 5050 4550 50  0001 C CNN
-F 1 "GND" H 5055 4627 50  0000 C CNN
-F 2 "" H 5050 4800 50  0001 C CNN
-F 3 "" H 5050 4800 50  0001 C CNN
-	1    5050 4800
+P 3750 4800
+F 0 "#PWR?" H 3750 4550 50  0001 C CNN
+F 1 "GND" H 3755 4627 50  0000 C CNN
+F 2 "" H 3750 4800 50  0001 C CNN
+F 3 "" H 3750 4800 50  0001 C CNN
+	1    3750 4800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5AE1FAB8
-P 5050 4050
-F 0 "#PWR?" H 5050 3900 50  0001 C CNN
-F 1 "+5V" H 5065 4223 50  0000 C CNN
-F 2 "" H 5050 4050 50  0001 C CNN
-F 3 "" H 5050 4050 50  0001 C CNN
-	1    5050 4050
+P 3750 4050
+F 0 "#PWR?" H 3750 3900 50  0001 C CNN
+F 1 "+5V" H 3765 4223 50  0000 C CNN
+F 2 "" H 3750 4050 50  0001 C CNN
+F 3 "" H 3750 4050 50  0001 C CNN
+	1    3750 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 4250 5150 4250
+	3500 4250 3850 4250
 Wire Wire Line
-	5150 4350 4800 4350
+	3850 4350 3500 4350
 Wire Wire Line
-	5150 4150 5050 4150
+	3850 4150 3750 4150
 Wire Wire Line
-	5050 4150 5050 4050
+	3750 4150 3750 4050
 Wire Wire Line
-	5150 4650 5050 4650
+	3850 4650 3750 4650
 Wire Wire Line
-	5050 4650 5050 4800
-NoConn ~ 5150 4550
-NoConn ~ 5150 4450
+	3750 4650 3750 4800
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even XP?
 U 1 1 5AE27376
@@ -388,4 +334,118 @@ Wire Wire Line
 	4250 7500 4450 7500
 Wire Wire Line
 	4450 7500 4450 7650
+$Comp
+L Connector_Generic:Conn_01x02 XP?
+U 1 1 5ADAC8B3
+P 3950 8300
+F 0 "XP?" H 4029 8292 50  0000 L CNN
+F 1 "PWR-5V" H 4029 8201 50  0000 L CNN
+F 2 "" H 3950 8300 50  0001 C CNN
+F 3 "~" H 3950 8300 50  0001 C CNN
+	1    3950 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 XP?
+U 1 1 5ADACAD0
+P 3950 8650
+F 0 "XP?" H 4029 8642 50  0000 L CNN
+F 1 "PWR-5V" H 4029 8551 50  0000 L CNN
+F 2 "" H 3950 8650 50  0001 C CNN
+F 3 "~" H 3950 8650 50  0001 C CNN
+	1    3950 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ADAE6E2
+P 3650 8850
+F 0 "#PWR?" H 3650 8600 50  0001 C CNN
+F 1 "GND" H 3655 8677 50  0000 C CNN
+F 2 "" H 3650 8850 50  0001 C CNN
+F 3 "" H 3650 8850 50  0001 C CNN
+	1    3650 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5ADAEA7B
+P 3550 8300
+F 0 "#PWR?" H 3550 8150 50  0001 C CNN
+F 1 "+5V" H 3565 8473 50  0000 C CNN
+F 2 "" H 3550 8300 50  0001 C CNN
+F 3 "" H 3550 8300 50  0001 C CNN
+	1    3550 8300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 8300 3650 8300
+Wire Wire Line
+	3650 8300 3650 8650
+Wire Wire Line
+	3650 8650 3750 8650
+Connection ~ 3650 8650
+Wire Wire Line
+	3650 8650 3650 8850
+Wire Wire Line
+	3750 8750 3550 8750
+Wire Wire Line
+	3550 8750 3550 8400
+Wire Wire Line
+	3750 8400 3550 8400
+Connection ~ 3550 8400
+Wire Wire Line
+	3550 8400 3550 8300
+$Comp
+L Connector_Specialized:Screw_Terminal_01x02 XP?
+U 1 1 5ADC296E
+P 5000 8650
+F 0 "XP?" H 5080 8642 50  0000 L CNN
+F 1 "BATT" H 5080 8551 50  0000 L CNN
+F 2 "" H 5000 8650 50  0001 C CNN
+F 3 "~" H 5000 8650 50  0001 C CNN
+	1    5000 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ADC2D33
+P 4700 8850
+F 0 "#PWR?" H 4700 8600 50  0001 C CNN
+F 1 "GND" H 4705 8677 50  0000 C CNN
+F 2 "" H 4700 8850 50  0001 C CNN
+F 3 "" H 4700 8850 50  0001 C CNN
+	1    4700 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5ADC2DB8
+P 4700 8550
+F 0 "#PWR?" H 4700 8400 50  0001 C CNN
+F 1 "+BATT" H 4715 8723 50  0000 C CNN
+F 2 "" H 4700 8550 50  0001 C CNN
+F 3 "" H 4700 8550 50  0001 C CNN
+	1    4700 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 8650 4700 8650
+Wire Wire Line
+	4700 8650 4700 8550
+Wire Wire Line
+	4800 8750 4700 8750
+Wire Wire Line
+	4700 8750 4700 8850
+$Comp
+L dronecode-conn:DC-GPS XP?
+U 1 1 5AE4627A
+P 4200 4400
+F 0 "XP?" H 4378 4453 60  0000 L CNN
+F 1 "RPI-CON" H 4378 4347 60  0000 L CNN
+F 2 "" H 4150 4400 60  0001 C CNN
+F 3 "" H 4150 4400 60  0001 C CNN
+	1    4200 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

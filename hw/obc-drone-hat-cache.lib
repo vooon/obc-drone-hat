@@ -99,6 +99,29 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_Specialized_Screw_Terminal_01x02
+#
+DEF Connector_Specialized_Screw_Terminal_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Specialized_Screw_Terminal_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_Battery_Cell
 #
 DEF Device_Battery_Cell BT 0 0 N N 1 F N
@@ -379,23 +402,39 @@ X ~ 8 300 200 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# dronecode-conn_DC-I2C
+# dronecode-conn_DC-Debug
 #
-DEF dronecode-conn_DC-I2C XP 0 40 Y Y 1 F N
-F0 "XP" -100 350 60 H V C CNN
-F1 "dronecode-conn_DC-I2C" 0 -350 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-$FPLIST
- JST_GH_BM04B-GHS-TBT_04x1.25mm_Straight
- JST_GH_SM04B-GHS-TB-04x1.25mm_Angled
-$ENDFPLIST
+DEF dronecode-conn_DC-Debug XP 0 40 Y Y 1 F N
+F0 "XP" -100 450 60 H V C CNN
+F1 "dronecode-conn_DC-Debug" 0 -450 60 H V C CNN
+F2 "" -50 0 60 H I C CNN
+F3 "" -50 0 60 H I C CNN
 DRAW
-S -200 300 200 -300 0 1 0 N
-X SCL 1 -400 50 200 R 50 50 1 1 B
-X Vcc 1 -400 150 200 R 50 50 1 1 W
-X SDA 3 -400 -50 200 R 50 50 1 1 B
-X GND 4 -400 -150 200 R 50 50 1 1 w
+S -200 400 200 -400 0 1 0 N
+X TGT_V 1 -400 250 200 R 50 50 1 1 W
+X CON_TX 2 -400 150 200 R 50 50 1 1 I
+X CON_RX 3 -400 50 200 R 50 50 1 1 O
+X SWDIO 4 -400 -50 200 R 50 50 1 1 B
+X SWCLK 5 -400 -150 200 R 50 50 1 1 O
+X GND ~ -400 -250 200 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# dronecode-conn_DC-GPS
+#
+DEF dronecode-conn_DC-GPS XP 0 40 Y Y 1 F N
+F0 "XP" 0 450 60 H V C CNN
+F1 "dronecode-conn_DC-GPS" 0 -450 60 H V C CNN
+F2 "" -50 0 60 H I C CNN
+F3 "" -50 0 60 H I C CNN
+DRAW
+S -150 400 150 -400 0 1 0 N
+X VCC 1 -350 250 200 R 50 50 1 1 W
+X TX 2 -350 150 200 R 50 50 1 1 P
+X RX 3 -350 50 200 R 50 50 1 1 P
+X SCL 4 -350 -50 200 R 50 50 1 1 P
+X SDA 5 -350 -150 200 R 50 50 1 1 P
+X GND 6 -350 -250 200 R 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
@@ -462,24 +501,6 @@ X GND 12 -300 -150 200 R 50 50 3 1 W
 X GND 3 -300 150 200 R 50 50 3 1 W
 X GND 6 -300 50 200 R 50 50 3 1 W
 X GND 9 -300 -50 200 R 50 50 3 1 W
-ENDDRAW
-ENDDEF
-#
-# dronecode-conn_stm_swdo
-#
-DEF dronecode-conn_stm_swdo XP 0 40 Y Y 1 F N
-F0 "XP" -100 450 60 H V C CNN
-F1 "dronecode-conn_stm_swdo" 0 -450 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-DRAW
-S -200 400 200 -400 0 1 0 N
-X +3.3 1 -400 250 200 R 50 50 1 1 P
-X SWCLK 2 -400 150 200 R 50 50 1 1 P
-X GND 3 -400 50 200 R 50 50 1 1 P
-X SWDIO 4 -400 -50 200 R 50 50 1 1 P
-X ~NRST 5 -400 -150 200 R 50 50 1 1 P
-X SWO 6 -400 -250 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
