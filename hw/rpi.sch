@@ -300,7 +300,7 @@ RPI_SCL
 Text Notes 2900 4750 0    60   ~ 0
 NOTEs:\n1. GPCLK0 mode 1 (19.2 MHz) used as clock source for other ICs\n2. RPI I2C already have 1.8k pull-up to 3v3\n3. RPI 3B can supply up to 500 mA at 3v3
 Text GLabel 2800 2450 0    60   Input ~ 0
-~SER_INT
+~SER_IRQ
 Wire Wire Line
 	2800 2450 3550 2450
 Text GLabel 2800 2550 0    60   Output ~ 0
@@ -586,4 +586,19 @@ F 3 "" H 4700 8700 50  0001 C CNN
 	2    4700 8700
 	1    0    0    1   
 $EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5AE4F91B
+P 5050 8150
+F 0 "#FLG0102" H 5050 8225 50  0001 C CNN
+F 1 "PWR_FLAG" H 5050 8324 50  0000 C CNN
+F 2 "" H 5050 8150 50  0001 C CNN
+F 3 "" H 5050 8150 50  0001 C CNN
+	1    5050 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 8250 5050 8250
+Wire Wire Line
+	5050 8250 5050 8150
 $EndSCHEMATC
