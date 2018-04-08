@@ -51,10 +51,10 @@ F0 "DC-DC" 60
 F1 "dc-dc.sch" 60
 $EndSheet
 $Comp
-L Graphic:Logo_Open_Hardware_Large #LOGO?
+L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 5AB63E41
 P 1450 10950
-F 0 "#LOGO?" H 1450 11450 50  0001 C CNN
+F 0 "#LOGO1" H 1450 11450 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Large" H 1450 10550 50  0001 C CNN
 F 2 "" H 1450 10950 50  0001 C CNN
 F 3 "~" H 1450 10950 50  0001 C CNN
