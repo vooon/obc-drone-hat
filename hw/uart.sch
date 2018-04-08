@@ -372,7 +372,7 @@ U 1 1 5AB6CF92
 P 5200 2800
 F 0 "JP1" V 5246 2886 50  0000 L CNN
 F 1 "Jumper_3_Open" V 5155 2886 50  0000 L CNN
-F 2 "" H 5200 2800 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5200 2800 50  0001 C CNN
 F 3 "~" H 5200 2800 50  0001 C CNN
 	1    5200 2800
 	0    -1   -1   0   

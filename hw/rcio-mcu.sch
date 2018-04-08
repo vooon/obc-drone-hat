@@ -449,7 +449,7 @@ U 1 1 5AC7BF22
 P 3600 8950
 F 0 "DD3" H 3350 9350 60  0000 C CNN
 F 1 "NC7SZ157P6X" H 3600 8650 60  0000 C CNN
-F 2 "" H 3600 8950 60  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 3600 8950 60  0001 C CNN
 F 3 "https://www.terraelectronica.ru/pdf/show?pdf_file=%252Fds%252Fpdf%252FN%252Fnc7sz157p6x.pdf" H 3600 8950 60  0001 C CNN
 	1    3600 8950
 	1    0    0    -1  
