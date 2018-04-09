@@ -61,4 +61,48 @@ F 3 "~" H 1450 10950 50  0001 C CNN
 	1    1450 10950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:Mounting_Hole MK1
+U 1 1 5ACC54BA
+P 2200 10600
+F 0 "MK1" H 2300 10646 50  0000 L CNN
+F 1 "Mounting_Hole" H 2300 10555 50  0000 L CNN
+F 2 "hat:M2.5_Mounting_Hole" H 2200 10600 50  0001 C CNN
+F 3 "" H 2200 10600 50  0001 C CNN
+	1    2200 10600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK2
+U 1 1 5ACC5819
+P 2200 10800
+F 0 "MK2" H 2300 10846 50  0000 L CNN
+F 1 "Mounting_Hole" H 2300 10755 50  0000 L CNN
+F 2 "hat:M2.5_Mounting_Hole" H 2200 10800 50  0001 C CNN
+F 3 "" H 2200 10800 50  0001 C CNN
+	1    2200 10800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK3
+U 1 1 5ACC5831
+P 2200 11000
+F 0 "MK3" H 2300 11046 50  0000 L CNN
+F 1 "Mounting_Hole" H 2300 10955 50  0000 L CNN
+F 2 "hat:M2.5_Mounting_Hole" H 2200 11000 50  0001 C CNN
+F 3 "" H 2200 11000 50  0001 C CNN
+	1    2200 11000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK4
+U 1 1 5ACC584F
+P 2200 11200
+F 0 "MK4" H 2300 11246 50  0000 L CNN
+F 1 "Mounting_Hole" H 2300 11155 50  0000 L CNN
+F 2 "hat:M2.5_Mounting_Hole" H 2200 11200 50  0001 C CNN
+F 3 "" H 2200 11200 50  0001 C CNN
+	1    2200 11200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
