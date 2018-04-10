@@ -125,4 +125,6 @@ $EndComp
 Wire Wire Line
 	5650 4850 5650 4950
 Connection ~ 5650 4950
+Text Label 5150 4950 0    60   ~ 0
++3Vbat
 $EndSCHEMATC

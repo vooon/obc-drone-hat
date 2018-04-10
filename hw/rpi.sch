@@ -425,22 +425,6 @@ Text GLabel 6150 2450 2    60   Input ~ 0
 ~STM_INT
 Wire Wire Line
 	6150 2450 5250 2450
-Text GLabel 6150 3750 2    60   Output ~ 0
-BCM20_SPI1_MOSI
-Text GLabel 6150 3850 2    60   Output ~ 0
-BCM21_SPI1_SCLK
-Text GLabel 6150 3650 2    60   Output ~ 0
-~RPI_SPI1_CE2
-Text GLabel 2800 3650 0    60   Input ~ 0
-BCM19_SPI1_MISO
-Wire Wire Line
-	5250 3650 6150 3650
-Wire Wire Line
-	5250 3750 6150 3750
-Wire Wire Line
-	5250 3850 6150 3850
-Wire Wire Line
-	2800 3650 3550 3650
 Text GLabel 6150 2650 2    60   Input ~ 0
 CFG_ID0
 Text GLabel 6150 2750 2    60   Input ~ 0
@@ -449,30 +433,10 @@ Wire Wire Line
 	6150 2650 5250 2650
 Wire Wire Line
 	6150 2750 5250 2750
-Text GLabel 2800 3750 0    60   Output ~ 0
-BCM26
-Text GLabel 2800 3550 0    60   BiDi ~ 0
-BCM13
-Wire Wire Line
-	3550 3550 2800 3550
-Wire Wire Line
-	2800 3750 3550 3750
-Text GLabel 2800 3350 0    60   BiDi ~ 0
-BCM5
-Text GLabel 2800 3450 0    60   BiDi ~ 0
-BCM6
-Wire Wire Line
-	2800 3350 3550 3350
-Wire Wire Line
-	3550 3450 2800 3450
-Text GLabel 6150 3450 2    60   BiDi ~ 0
-BCM12
 Text GLabel 6150 2950 2    60   Input ~ 0
 CFG_ID2
 Wire Wire Line
 	6150 2950 5250 2950
-Wire Wire Line
-	5250 3450 6150 3450
 Wire Wire Line
 	3350 1950 3350 2750
 Wire Wire Line
@@ -605,4 +569,13 @@ Text Label 3900 9000 0    60   ~ 0
 ZVD_B
 Text Label 4400 9000 0    60   ~ 0
 ZVD_G
+NoConn ~ 3550 3350
+NoConn ~ 3550 3450
+NoConn ~ 3550 3550
+NoConn ~ 3550 3650
+NoConn ~ 3550 3750
+NoConn ~ 5250 3450
+NoConn ~ 5250 3650
+NoConn ~ 5250 3750
+NoConn ~ 5250 3850
 $EndSCHEMATC
