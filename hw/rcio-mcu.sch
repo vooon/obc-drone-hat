@@ -276,9 +276,9 @@ SERVO2
 Text GLabel 11300 4250 2    60   Output ~ 0
 SERVO3
 Text GLabel 13050 2200 0    60   UnSpc ~ 0
-ADC_Vbat
+Vbat
 Text GLabel 14100 2600 2    60   UnSpc ~ 0
-ADC_V5hat
++5Vhat
 $Comp
 L dronecode-conn:FrSky-XSR XP2
 U 1 1 5AC46946

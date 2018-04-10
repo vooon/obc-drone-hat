@@ -15,9 +15,9 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text GLabel 3150 4900 0    60   UnSpc ~ 0
-ADC_Vbat
+Vbat
 Text GLabel 6500 5000 2    60   UnSpc ~ 0
-ADC_V5hat
++5Vhat
 $Comp
 L power:+BATT #PWR060
 U 1 1 5AD5E52F
@@ -137,8 +137,8 @@ $Comp
 L Device:C C15
 U 1 1 5AD6310A
 P 5100 5300
-F 0 "C15" V 5000 5200 50  0000 C CNN
-F 1 "0.01" V 5000 5450 50  0000 C CNN
+F 0 "C15" V 4950 5250 50  0000 C CNN
+F 1 "0.01" V 4950 5450 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5138 5150 50  0001 C CNN
 F 3 "~" H 5100 5300 50  0001 C CNN
 	1    5100 5300
@@ -256,4 +256,6 @@ Wire Wire Line
 Connection ~ 2700 6350
 Wire Wire Line
 	2700 6350 3050 6350
+Text Label 4850 5300 0    60   ~ 0
+CB
 $EndSCHEMATC
