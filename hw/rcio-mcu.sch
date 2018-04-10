@@ -284,13 +284,13 @@ L dronecode-conn:FrSky-XSR XP2
 U 1 1 5AC46946
 P 5650 6950
 F 0 "XP2" H 5450 7400 60  0000 L CNN
-F 1 "FrSky-XSR" H 5450 6500 60  0000 L CNN
+F 1 "FrSky-XSR" V 5900 6650 60  0000 L CNN
 F 2 "Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal" H 5650 6950 60  0001 C CNN
 F 3 "" H 5650 6950 60  0001 C CNN
 	1    5650 6950
 	1    0    0    -1  
 $EndComp
-Text Notes 4550 7800 0    60   ~ 0
+Text Notes 4400 8050 0    60   ~ 0
 NOTE: XSR module uses 5-pin conn.\nI decided to use 6-pin JST GH, to reduce nomenclature.
 $Comp
 L power:GND #PWR024
@@ -1005,4 +1005,30 @@ Wire Wire Line
 	13850 3700 13850 3750
 Wire Wire Line
 	10600 3250 13550 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5ACFE321
+P 12550 9050
+F 0 "#PWR?" H 12550 8800 50  0001 C CNN
+F 1 "GND" H 12555 8877 50  0000 C CNN
+F 2 "" H 12550 9050 50  0001 C CNN
+F 3 "" H 12550 9050 50  0001 C CNN
+	1    12550 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 8950 12550 9050
+$Comp
+L power:GND #PWR?
+U 1 1 5AD073B8
+P 5750 7650
+F 0 "#PWR?" H 5750 7400 50  0001 C CNN
+F 1 "GND" H 5755 7477 50  0000 C CNN
+F 2 "" H 5750 7650 50  0001 C CNN
+F 3 "" H 5750 7650 50  0001 C CNN
+	1    5750 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 7650 5750 7550
 $EndSCHEMATC

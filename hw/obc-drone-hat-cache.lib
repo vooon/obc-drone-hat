@@ -422,7 +422,7 @@ ENDDEF
 #
 DEF dronecode-conn_DC-Debug XP 0 40 Y Y 1 F N
 F0 "XP" -100 450 60 H V C CNN
-F1 "dronecode-conn_DC-Debug" 0 -450 60 H V C CNN
+F1 "dronecode-conn_DC-Debug" 250 0 60 V V C CNN
 F2 "" -50 0 60 H I C CNN
 F3 "" -50 0 60 H I C CNN
 DRAW
@@ -433,6 +433,7 @@ X CON_RX 3 -400 50 200 R 50 50 1 1 O
 X SWDIO 4 -400 -50 200 R 50 50 1 1 B
 X SWCLK 5 -400 -150 200 R 50 50 1 1 O
 X GND 6 -400 -250 200 R 50 50 1 1 W
+X ~ MP 100 -600 200 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -440,7 +441,7 @@ ENDDEF
 #
 DEF dronecode-conn_DC-GPS XP 0 40 Y Y 1 F N
 F0 "XP" 0 450 60 H V C CNN
-F1 "dronecode-conn_DC-GPS" 0 -450 60 H V C CNN
+F1 "dronecode-conn_DC-GPS" 200 0 60 V V C CNN
 F2 "" -50 0 60 H I C CNN
 F3 "" -50 0 60 H I C CNN
 DRAW
@@ -451,6 +452,7 @@ X RX 3 -350 50 200 R 50 50 1 1 P
 X SCL 4 -350 -50 200 R 50 50 1 1 P
 X SDA 5 -350 -150 200 R 50 50 1 1 P
 X GND 6 -350 -250 200 R 50 50 1 1 w
+X ~ MP 50 -600 200 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -458,7 +460,7 @@ ENDDEF
 #
 DEF dronecode-conn_DC-Telemetry XP 0 40 Y Y 1 F N
 F0 "XP" -100 450 60 H V C CNN
-F1 "dronecode-conn_DC-Telemetry" 0 -450 60 H V C CNN
+F1 "dronecode-conn_DC-Telemetry" 250 0 60 V V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 $FPLIST
@@ -473,6 +475,7 @@ X RX 3 -400 50 200 R 50 50 1 1 P
 X ~CTX 4 -400 -50 200 R 50 50 1 1 P
 X ~RTS 5 -400 -150 200 R 50 50 1 1 P
 X GND 6 -400 -250 200 R 50 50 1 1 W
+X ~ MP 100 -600 200 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -480,7 +483,7 @@ ENDDEF
 #
 DEF dronecode-conn_FrSky-XSR XP 0 40 Y Y 1 F N
 F0 "XP" -100 450 60 H V C CNN
-F1 "dronecode-conn_FrSky-XSR" 0 -450 60 H V C CNN
+F1 "dronecode-conn_FrSky-XSR" 250 0 60 V V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -491,6 +494,7 @@ X S.port 3 -400 50 200 R 50 50 1 1 B
 X +5v 4 -400 -50 200 R 50 50 1 1 W
 X GND 5 -400 -150 200 R 50 50 1 1 W
 X GND 6 -400 -250 200 R 50 50 1 1 W
+X ~ MP 100 -600 200 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
