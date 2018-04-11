@@ -154,28 +154,12 @@ F 3 "~" H 13150 6550 50  0001 C CNN
 	1    13150 6550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C7
-U 1 1 5AC31513
-P 13350 6550
-F 0 "C7" H 12050 6300 50  0000 L CNN
-F 1 "0.1" H 12200 6300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 13388 6400 50  0001 C CNN
-F 3 "~" H 13350 6550 50  0001 C CNN
-	1    13350 6550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	12550 6400 12550 6300
 Wire Wire Line
 	12550 6300 12750 6300
 Wire Wire Line
-	13350 6300 13350 6400
-Wire Wire Line
 	13150 6400 13150 6300
-Connection ~ 13150 6300
-Wire Wire Line
-	13150 6300 13350 6300
 Wire Wire Line
 	12950 6400 12950 6300
 Connection ~ 12950 6300
@@ -193,12 +177,7 @@ Wire Wire Line
 Wire Wire Line
 	12550 6800 12750 6800
 Wire Wire Line
-	13350 6800 13350 6700
-Wire Wire Line
 	13150 6700 13150 6800
-Connection ~ 13150 6800
-Wire Wire Line
-	13150 6800 13350 6800
 Wire Wire Line
 	12950 6700 12950 6800
 Connection ~ 12950 6800
