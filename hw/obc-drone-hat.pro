@@ -1,4 +1,4 @@
-update=Вс 01 апр 2018 14:13:45
+update=Пт 20 апр 2018 22:56:05
 version=1
 last_client=kicad
 [cvpcb]
@@ -31,7 +31,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=gost_landscape.kicad_wks
-PlotDirectoryName=
+PlotDirectoryName=../gerbers/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
