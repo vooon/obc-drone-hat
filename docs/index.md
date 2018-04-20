@@ -28,3 +28,11 @@ Modules
 3. RC bridge MCU - STM32F030CC - to decode S.BUS, generate CPPM, inject FrSky telemetry to S.Port.
 4. Hi-power supply input (with optional Vbat mon up to 6S battery)
 5. ID EEPROM with all needed DT-overlays.
+
+
+HAT Version 1.0a
+----------------
+
+I ordered batch of PCB 21.04.2018, should receive in +1 mo.
+
+![3D render](3d-render-pcb-v1.0a.png)
