@@ -36,3 +36,18 @@ HAT Version 1.0a
 I ordered batch of PCB 21.04.2018, should receive in +1 mo.
 
 ![3D render](3d-render-pcb-v1.0a.png)
+
+
+Connectors:
+
+- TELEM1 - MAX UART 0
+- TELEM2 - MAX UART 1
+- Raspberry Pi UART and I2C (same as Pixhawk 2 GPS2 port)
+- STM debug port (not needed in normal conditions)
+- 4x servo (in case if you want add Pan-Tilt on ground station)
+- 5V FAN (with optional RPM input and PWM-able output)
+- FrSky XSR connector (provide RC signals)
+- CPPM out (muxed from XSR module and STM)
+- XT30 power input, up to 30V (6S LiPo 25.2V), up to 25W
+- 2x PH 5v power supply (if you need to power something)
+- Config ID 3-bit switch (rotary switch for 8 positions, or individual DIP switch) - to select operation mode (config in EZ-WifiBroadcast).
